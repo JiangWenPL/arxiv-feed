@@ -11,7 +11,9 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 from src.db.models import init_db, get_db, add_paper
 from src.scraper.arxiv_scraper import scrape_arxiv
 from src.scraper.rss_scraper import scrape_rss
+from src.scraper.twitter_scraper import scrape_twitter
 from src.scraper.scorer import score_papers
+from src.scraper.citation_enricher import enrich_with_citations
 
 logging.basicConfig(
     level=logging.INFO,
@@ -37,6 +39,9 @@ def main():
     logger.info("--- Fetching from RSS feeds ---")
     papers.extend(scrape_rss())
 
+    logger.info("--- Fetching from Twitter/X ---")
+    papers.extend(scrape_twitter())
+
     if not papers:
         logger.warning("No papers fetched from any source")
         conn.close()
@@ -45,6 +50,10 @@ def main():
     # Score all papers
     logger.info(f"--- Scoring {len(papers)} papers ---")
     papers = score_papers(papers)
+
+    # Enrich top papers with citation data
+    logger.info("--- Enriching with citation data ---")
+    papers = enrich_with_citations(papers, max_lookups=30)
 
     # Store in DB
     new_count = 0
