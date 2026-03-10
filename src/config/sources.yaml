@@ -71,8 +71,8 @@ blogs:
       category: "ml_infra"
       credibility: 2
 
-    - name: "Sebastian Raschka"
-      url: "https://sebastianraschka.com/blog/feed.xml"
+    - name: "Sebastian Raschka / Ahead of AI"
+      url: "https://magazine.sebastianraschka.com/feed"
       category: "learning_methods"
       credibility: 1
 
@@ -85,6 +85,31 @@ blogs:
       url: "https://colah.github.io/rss.xml"
       category: "learning_methods"
       credibility: 1
+
+    - name: "Nathan Lambert / Interconnects"
+      url: "https://www.interconnects.ai/feed"
+      category: "learning_methods"
+      credibility: 1
+
+    - name: "Cameron Wolfe / Deep Learning Focus"
+      url: "https://cameronrwolfe.substack.com/feed"
+      category: "learning_methods"
+      credibility: 2
+
+    - name: "BAIR Blog"
+      url: "https://bair.berkeley.edu/blog/feed.xml"
+      category: "latest_research"
+      credibility: 1
+
+    - name: "Autonomous Vision (Geiger Lab)"
+      url: "https://autonomousvision.github.io/feed.xml"
+      category: "latest_research"
+      credibility: 1
+
+    - name: "Frank Dellaert"
+      url: "https://dellaert.github.io/feed.xml"
+      category: "latest_research"
+      credibility: 2
 
 twitter:
   # Curated researcher accounts (for future scraping)

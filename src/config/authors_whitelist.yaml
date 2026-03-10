@@ -33,6 +33,31 @@ researchers:
     topics: ["3D reconstruction", "human body"]
     credibility_tier: 1
 
+  - name: "Thomas Leimkuehler"
+    affiliation: "NVIDIA Research"
+    topics: ["3DGS", "neural rendering", "splatting primitives"]
+    credibility_tier: 1
+
+  - name: "Andreas Geiger"
+    affiliation: "University of Tubingen / MPI-IS"
+    topics: ["3D reconstruction", "neural rendering", "autonomous driving"]
+    credibility_tier: 1
+
+  - name: "Matthew Tancik"
+    affiliation: "Luma AI"
+    topics: ["NeRF", "3D reconstruction", "nerfstudio"]
+    credibility_tier: 1
+
+  - name: "Lingjie Liu"
+    affiliation: "University of Pennsylvania"
+    topics: ["neural rendering", "3D reconstruction", "human performance capture"]
+    credibility_tier: 2
+
+  - name: "Frank Dellaert"
+    affiliation: "Georgia Tech"
+    topics: ["3D reconstruction", "NeRF", "gaussian splatting"]
+    credibility_tier: 2
+
   # ML Infra / Systems
   - name: "Tri Dao"
     affiliation: "Princeton / Together AI"
@@ -53,6 +78,31 @@ researchers:
     affiliation: "CMU"
     topics: ["ML compilers", "TVM", "systems"]
     credibility_tier: 1
+
+  - name: "Albert Gu"
+    affiliation: "CMU / Cartesia AI"
+    topics: ["Mamba", "state space models", "efficient sequence modeling"]
+    credibility_tier: 1
+
+  - name: "Woosuk Kwon"
+    affiliation: "UC Berkeley"
+    topics: ["vLLM", "PagedAttention", "efficient LLM serving"]
+    credibility_tier: 1
+
+  - name: "Tianle Cai"
+    affiliation: "Princeton"
+    topics: ["speculative decoding", "model compression", "efficient inference"]
+    credibility_tier: 2
+
+  - name: "Lianmin Zheng"
+    affiliation: "UC Berkeley / LMSYS"
+    topics: ["SGLang", "efficient LLM serving"]
+    credibility_tier: 2
+
+  - name: "Zico Kolter"
+    affiliation: "CMU"
+    topics: ["robust ML", "efficient models", "Mamba"]
+    credibility_tier: 2
 
   # Learning Methods / Foundation Models
   - name: "Ilya Sutskever"
@@ -99,6 +149,36 @@ researchers:
     affiliation: "Cornell"
     topics: ["transformers", "structured generation"]
     credibility_tier: 1
+
+  - name: "Nathan Lambert"
+    affiliation: "Allen Institute for AI"
+    topics: ["RLHF", "post-training", "preference optimization"]
+    credibility_tier: 1
+
+  - name: "Jan Leike"
+    affiliation: "Anthropic"
+    topics: ["alignment", "scalable oversight", "superalignment"]
+    credibility_tier: 1
+
+  - name: "Paul Christiano"
+    affiliation: "NIST CAISI"
+    topics: ["alignment", "RLHF", "iterated amplification"]
+    credibility_tier: 1
+
+  - name: "Chelsea Finn"
+    affiliation: "Stanford"
+    topics: ["meta-learning", "DPO", "robot learning", "alignment"]
+    credibility_tier: 1
+
+  - name: "Rafael Rafailov"
+    affiliation: "Stanford"
+    topics: ["DPO", "preference optimization"]
+    credibility_tier: 2
+
+  - name: "Eric Mitchell"
+    affiliation: "Stanford"
+    topics: ["DPO", "factuality", "scalable oversight"]
+    credibility_tier: 2
 
   # Math / Quant
   - name: "Tai-Danae Bradley"

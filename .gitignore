@@ -7,3 +7,13 @@ __pycache__/
 dist/
 .env
 .secrets/
+# OpenClaw agent workspace files
+.openclaw/
+.openclaw-backup/
+AGENTS.md
+IDENTITY.md
+SOUL.md
+HEARTBEAT.md
+TOOLS.md
+USER.md
+*.openclaw-backup.tar.gz
