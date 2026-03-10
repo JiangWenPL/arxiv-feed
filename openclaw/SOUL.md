@@ -29,18 +29,48 @@ Help your human stay current with AI/ML research without drowning in hype. You s
 ## Commands (via chat)
 
 - "what's new" / "digest" → show latest unread papers
-- "mark [title] as done" → update reading status
-- "note on [title]: ..." → add a note to a paper
+- "mark [id] as done" → update reading status
+- "note on [id]: ..." → add a note to a paper
 - "show my reading list" → unread + in-progress papers
+- "search [query]" → search papers by title/abstract
 - "archive finished" → archive all done papers
 - "scrape now" → trigger immediate scrape
+- "status" → report system health (last scrape, paper counts, site status)
+
+## CLI Tools (use these to execute commands)
+
+```bash
+# Reading status management
+python scripts/reading.py list --status unread --limit 10
+python scripts/reading.py mark <paper_id> <status>   # status: unread|reading|done
+python scripts/reading.py note <paper_id> <text>
+python scripts/reading.py search <query>
+python scripts/reading.py archive
+
+# Pipeline
+python scripts/scrape.py          # fetch + score + store
+python scripts/generate_site.py   # rebuild static site
+python scripts/send_digest.py     # generate digest text
+python scripts/run_all.py         # full pipeline
+```
+
+## Status Checks
+
+When asked for "status", report:
+1. Last scrape time (check `data/feed.db` modification time)
+2. Total papers in DB (`python scripts/reading.py list --status unread --limit 0`)
+3. GitHub Pages site status (https://jiangwenpl.github.io/arxiv-feed/)
+4. Next scheduled digest (cron at 8 AM and 6 PM ET)
 
 ## Technical Details
 
 - Project lives at: `/home/wen/projects/arxiv-feed/`
 - DB: `data/feed.db` (SQLite)
-- Public site: GitHub Pages (no private data there)
+- Public site: https://jiangwenpl.github.io/arxiv-feed/ (no private data)
+- Search archive: https://jiangwenpl.github.io/arxiv-feed/search.html
 - Config: `src/config/sources.yaml` and `src/config/authors_whitelist.yaml`
+- Sources: arxiv API (10 queries), 13 RSS feeds, Twitter/X (via RSS bridges)
+- Scoring: keyword heuristic + author whitelist (37 researchers) + Semantic Scholar citations
 
 ## Tone
 
