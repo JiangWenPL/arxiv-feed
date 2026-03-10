@@ -18,7 +18,7 @@
 
   <div id="results">
     {% for paper in papers %}
-    <div class="paper" data-search="{{ paper.title|lower }} {{ paper.authors|lower }} {{ (paper.abstract or '')|lower }}">
+    <div class="paper" data-search="{{ (paper.title ~ ' ' ~ paper.authors ~ ' ' ~ (paper.abstract or ''))|lower|e }}">
       <div class="paper-title">
         {% if paper.score >= 10 %}
         <span class="score score-high">{{ "%.0f"|format(paper.score) }}</span>

@@ -52,7 +52,8 @@ def enrich_with_citations(papers: list[dict], max_lookups: int = 30) -> list[dic
 def _get_citation_count(arxiv_id: str) -> int | None:
     """Look up citation count from Semantic Scholar."""
     # Clean arxiv ID (remove version suffix like v1, v2)
-    clean_id = arxiv_id.split("v")[0] if "v" in arxiv_id else arxiv_id
+    import re
+    clean_id = re.sub(r"v\d+$", "", arxiv_id)
     url = f"{S2_API}/ARXIV:{clean_id}?fields=citationCount"
 
     try:
