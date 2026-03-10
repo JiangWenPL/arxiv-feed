@@ -159,6 +159,37 @@ header p { color: var(--muted); font-size: 0.9rem; margin-top: 0.25rem; }
   margin-right: 0.2rem;
 }
 
+/* Search page */
+.search-box {
+  margin-bottom: 1.5rem;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  font-size: 0.95rem;
+  font-family: inherit;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--card-bg);
+  color: var(--fg);
+  outline: none;
+}
+
+.search-box input:focus {
+  border-color: var(--accent);
+}
+
+.citation-badge {
+  font-size: 0.65rem;
+  background: var(--accent-light);
+  color: var(--accent);
+  padding: 0.1rem 0.3rem;
+  border-radius: 3px;
+  margin-left: 0.3rem;
+  font-weight: 500;
+}
+
 footer {
   margin-top: 3rem;
   padding: 1rem 0;

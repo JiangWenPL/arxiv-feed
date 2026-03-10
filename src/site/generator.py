@@ -67,6 +67,17 @@ def generate_site(db_path=None):
     out_path.write_text(html)
     logger.info(f"site: wrote {out_path} ({total} papers)")
 
+    # Render search/archive page (all papers, no personal data)
+    all_papers = get_papers(conn, limit=500)
+    search_template = env.get_template("search.html")
+    search_html = search_template.render(
+        papers=all_papers,
+        total=len(all_papers),
+    )
+    search_path = OUTPUT_DIR / "search.html"
+    search_path.write_text(search_html)
+    logger.info(f"site: wrote {search_path} ({len(all_papers)} papers)")
+
     # Copy CSS
     css_src = TEMPLATE_DIR / "style.css"
     if css_src.exists():
