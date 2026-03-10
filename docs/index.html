@@ -1,0 +1,2247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research Feed</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Research Feed</h1>
+    <p>114 papers &middot; Updated 2026-03-10 04:44 UTC</p>
+  </header>
+
+  <nav>
+    
+    <a href="#latest_research" class="tag">Latest Research (24)</a>
+    
+    <a href="#ml_infra" class="tag">AI Foundation: ML Infra (30)</a>
+    
+    <a href="#learning_methods" class="tag">AI Foundation: Learning Methods (30)</a>
+    
+    <a href="#general_reading" class="tag">General Reading (30)</a>
+    
+  </nav>
+
+  
+  <div class="section" id="latest_research">
+    <div class="section-header">
+      <h2>Latest Research</h2>
+      <span class="count">24 papers</span>
+    </div>
+    <p class="section-desc">3D Gaussian Splatting, Neural Rendering, and related work</p>
+
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">36</span>
+        
+        <a href="http://arxiv.org/abs/2603.07587v1" target="_blank" rel="noopener">3DGS-HPC: Distractor-free 3D Gaussian Splatting with Hybrid Patch-wise Classification</a>
+      </div>
+      <div class="paper-meta">
+        Jiahao Chen, Yipeng Qin, Ganlong Zhao, Xin Li, Wenping Wang, Guanbin Li
+        &middot; arxiv
+        
+        &middot; 2026-03-08
+        
+      </div>
+      
+      <div class="paper-abstract">3D Gaussian Splatting (3DGS) has demonstrated remarkable performance in novel view synthesis and 3D scene reconstruction, yet its quality often degrades in real-world environments due to transient distractors, such as moving objects and varying shadows. Existing methods commonly rely on semantic cues extracted from pre-trained vision models to identify and suppress these distractors, but such semantics are misaligned with the binary distinction between static and transient regions and remain fragile under the appearance perturbations introduced during 3DGS optimization. We propose 3DGS-HPC, a framework that circumvents these limitations by combining two complementary principles: a patch-wise classification strategy that leverages local spatial consistency for robust region-level decisions, and a hybrid classification metric that adaptively integrates photometric and perceptual cues for more reliable separation. Extensive experiments demonstrate the superiority and robustness of our met</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">32</span>
+        
+        <a href="http://arxiv.org/abs/2603.08661v1" target="_blank" rel="noopener">ImprovedGS+: A High-Performance C++/CUDA Re-Implementation Strategy for 3D Gaussian Splatting</a>
+      </div>
+      <div class="paper-meta">
+        Jordi Muñoz Vicente
+        &middot; arxiv
+        
+        &middot; 2026-03-09
+        
+      </div>
+      
+      <div class="paper-abstract">Recent advancements in 3D Gaussian Splatting (3DGS) have shifted the focus toward balancing reconstruction fidelity with computational efficiency. In this work, we propose ImprovedGS+, a high-performance, low-level reinvention of the ImprovedGS strategy, implemented natively within the LichtFeld-Studio framework. By transitioning from high-level Python logic to hardware-optimized C++/CUDA kernels, we achieve a significant reduction in host-device synchronization and training latency. Our implementation introduces a Long-Axis-Split (LAS) CUDA kernel, custom Laplacian-based importance kernels with Non-Maximum Suppression (NMS) for edge scores, and an adaptive Exponential Scale Scheduler. Experimental results on the Mip-NeRF360 dataset demonstrate that ImprovedGS+ establishes a new Pareto-optimal front for scene reconstruction. Our 1M-budget variant outperforms the state-of-the-art MCMC baseline by achieving a 26.8% reduction in training time (saving 17 minutes per session) and utilizing </div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">26</span>
+        
+        <a href="http://arxiv.org/abs/2603.07660v1" target="_blank" rel="noopener">Holi-Spatial: Evolving Video Streams into Holistic 3D Spatial Intelligence</a>
+      </div>
+      <div class="paper-meta">
+        Yuanyuan Gao, Hao Li, Yifei Liu, Xinhao Ji, Yuning Gong, Yuanjun Liao, Fangfu Liu, Manyuan Zhang, Yuchen Yang, Dan Xu et al. (17 authors)
+        &middot; arxiv
+        
+        &middot; 2026-03-08
+        
+      </div>
+      
+      <div class="paper-abstract">The pursuit of spatial intelligence fundamentally relies on access to large-scale, fine-grained 3D data. However, existing approaches predominantly construct spatial understanding benchmarks by generating question-answer (QA) pairs from a limited number of manually annotated datasets, rather than systematically annotating new large-scale 3D scenes from raw web data. As a result, their scalability is severely constrained, and model performance is further hindered by domain gaps inherent in these narrowly curated datasets.   In this work, we propose Holi-Spatial, the first fully automated, large-scale, spatially-aware multimodal dataset, constructed from raw video inputs without human intervention, using the proposed data curation pipeline. Holi-Spatial supports multi-level spatial supervision, ranging from geometrically accurate 3D Gaussian Splatting (3DGS) reconstructions with rendered depth maps to object-level and relational semantic annotations, together with corresponding spatial Q</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">21</span>
+        
+        <a href="http://arxiv.org/abs/2603.02887v2" target="_blank" rel="noopener">Generalized non-exponential Gaussian splatting</a>
+      </div>
+      <div class="paper-meta">
+        Sébastien Speierer, Adrian Jarabo
+        &middot; arxiv
+        
+        &middot; 2026-03-03
+        
+      </div>
+      
+      <div class="paper-abstract">In this work we generalize 3D Gaussian splatting (3DGS) to a wider family of physically-based alpha-blending operators. 3DGS has become the standard de-facto for radiance field rendering and reconstruction, given its flexibility and efficiency. At its core, it is based on alpha-blending sorted semitransparent primitives, which in the limit converges to the classic radiative transfer function with exponential transmittance. Inspired by recent research on non-exponential radiative transfer, we generalize the image formation model of 3DGS to non-exponential regimes. Based on this generalization, we use a quadratic transmittance to define sub-linear, linear, and super-linear versions of 3DGS, which exhibit faster-than-exponential decay. We demonstrate that these new non-exponential variants achieve similar quality than the original 3DGS but significantly reduce the number of overdraws, which result on speed-ups of up to $4\times$ in complex real-world captures, on a ray-tracing-based rende</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">21</span>
+        
+        <a href="http://arxiv.org/abs/2603.02986v1" target="_blank" rel="noopener">VIRGi: View-dependent Instant Recoloring of 3D Gaussians Splats</a>
+      </div>
+      <div class="paper-meta">
+        Alessio Mazzucchelli, Ivan Ojeda-Martin, Fernando Rivas-Manzaneque, Elena Garces, Adrian Penate-Sanchez, Francesc Moreno-Noguer
+        &middot; arxiv
+        
+        &middot; 2026-03-03
+        
+      </div>
+      
+      <div class="paper-abstract">3D Gaussian Splatting (3DGS) has recently transformed the fields of novel view synthesis and 3D reconstruction due to its ability to accurately model complex 3D scenes and its unprecedented rendering performance. However, a significant challenge persists: the absence of an efficient and photorealistic method for editing the appearance of the scene&#39;s content. In this paper we introduce VIRGi, a novel approach for rapidly editing the color of scenes modeled by 3DGS while preserving view-dependent effects such as specular highlights. Key to our method are a novel architecture that separates color into diffuse and view-dependent components, and a multi-view training strategy that integrates image patches from multiple viewpoints. Improving over the conventional single-view batch training, our 3DGS representation provides more accurate reconstruction and serves as a solid representation for the recoloring task. For 3DGS recoloring, we then introduce a rapid scheme requiring only one manuall</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">21</span>
+        
+        <a href="http://arxiv.org/abs/2603.05152v1" target="_blank" rel="noopener">SSR-GS: Separating Specular Reflection in Gaussian Splatting for Glossy Surface Reconstruction</a>
+      </div>
+      <div class="paper-meta">
+        Ningjing Fan, Yiqun Wang
+        &middot; arxiv
+        
+        &middot; 2026-03-05
+        
+      </div>
+      
+      <div class="paper-abstract">In recent years, 3D Gaussian splatting (3DGS) has achieved remarkable progress in novel view synthesis. However, accurately reconstructing glossy surfaces under complex illumination remains challenging, particularly in scenes with strong specular reflections and multi-surface interreflections. To address this issue, we propose SSR-GS, a specular reflection modeling framework for glossy surface reconstruction. Specifically, we introduce a prefiltered Mip-Cubemap to model direct specular reflections efficiently, and propose an IndiASG module to capture indirect specular reflections.   Furthermore, we design Visual Geometry Priors (VGP) that couple a reflection-aware visual prior via a reflection score (RS) to downweight the photometric loss contribution of reflection-dominated regions, with geometry priors derived from VGGT, including progressively decayed depth supervision and transformed normal constraints. Extensive experiments on both synthetic and real-world datasets demonstrate tha</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">21</span>
+        
+        <a href="http://arxiv.org/abs/2603.06989v1" target="_blank" rel="noopener">MipSLAM: Alias-Free Gaussian Splatting SLAM</a>
+      </div>
+      <div class="paper-meta">
+        Yingzhao Li, Yan Li, Shixiong Tian, Yanjie Liu, Lijun Zhao, Gim Hee Lee
+        &middot; arxiv
+        
+        &middot; 2026-03-07
+        
+      </div>
+      
+      <div class="paper-abstract">This paper introduces MipSLAM, a frequency-aware 3D Gaussian Splatting (3DGS) SLAM framework capable of high-fidelity anti-aliased novel view synthesis and robust pose estimation under varying camera configurations. Existing 3DGS-based SLAM systems often suffer from aliasing artifacts and trajectory drift due to inadequate filtering and purely spatial optimization. To overcome these limitations, we propose an Elliptical Adaptive Anti-aliasing (EAA) algorithm that approximates Gaussian contributions via geometry-aware numerical integration, avoiding costly analytic computation. Furthermore, we present a Spectral-Aware Pose Graph Optimization (SA-PGO) module that reformulates trajectory estimation in the frequency domain, effectively suppressing high-frequency noise and drift through graph Laplacian analysis. A novel local frequency-domain perceptual loss is also introduced to enhance fine-grained geometric detail recovery. Extensive evaluations on Replica and TUM datasets demonstrate th</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">21</span>
+        
+        <a href="http://arxiv.org/abs/2603.07552v1" target="_blank" rel="noopener">ReconDrive: Fast Feed-Forward 4D Gaussian Splatting for Autonomous Driving Scene Reconstruction</a>
+      </div>
+      <div class="paper-meta">
+        Haibao Yu, Kuntao Xiao, Jiahang Wang, Ruiyang Hao, Yuxin Huang, Guoran Hu, Haifang Qin, Bowen Jing, Yuntian Bo, Ping Luo
+        &middot; arxiv
+        
+        &middot; 2026-03-08
+        
+      </div>
+      
+      <div class="paper-abstract">High-fidelity visual reconstruction and novel-view synthesis are essential for realistic closed-loop evaluation in autonomous driving. While 4D Gaussian Splatting (4DGS) offers a promising balance of accuracy and efficiency, existing per-scene optimization methods require costly iterative refinement, rendering them unscalable for extensive urban environments. Conversely, current feed-forward approaches often suffer from degraded photometric quality. To address these limitations, we propose ReconDrive, a feed-forward framework that leverages and extends the 3D foundation model VGGT for rapid, high-fidelity 4DGS generation. Our architecture introduces two core adaptations to tailor the foundation model to dynamic driving scenes: (1) Hybrid Gaussian Prediction Heads, which decouple the regression of spatial coordinates and appearance attributes to overcome the photometric deficiencies inherent in generalized foundation features; and (2) a Static-Dynamic 4D Composition strategy that explic</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">21</span>
+        
+        <a href="http://arxiv.org/abs/2603.07604v1" target="_blank" rel="noopener">EmbedTalk: Triplane-Free Talking Head Synthesis using Embedding-Driven Gaussian Deformation</a>
+      </div>
+      <div class="paper-meta">
+        Arpita Saggar, Jonathan C. Darling, Duygu Sarikaya, David C. Hogg
+        &middot; arxiv
+        
+        &middot; 2026-03-08
+        
+      </div>
+      
+      <div class="paper-abstract">Real-time talking head synthesis increasingly relies on deformable 3D Gaussian Splatting (3DGS) due to its low latency. Tri-planes are the standard choice for encoding Gaussians prior to deformation, since they provide a continuous domain with explicit spatial relationships. However, tri-plane representations are limited by grid resolution and approximation errors introduced by projecting 3D volumetric fields onto 2D subspaces. Recent work has shown the superiority of learnt embeddings for driving temporal deformations in 4D scene reconstruction. We introduce $\textbf{EmbedTalk}$, which shows how such embeddings can be leveraged for modelling speech deformations in talking head synthesis. Through comprehensive experiments, we show that EmbedTalk outperforms existing 3DGS-based methods in rendering quality, lip synchronisation, and motion consistency, while remaining competitive with state-of-the-art generative models. Moreover, replacing the tri-plane encoding with learnt embeddings en</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">21</span>
+        
+        <a href="http://arxiv.org/abs/2603.08254v1" target="_blank" rel="noopener">DynamicVGGT: Learning Dynamic Point Maps for 4D Scene Reconstruction in Autonomous Driving</a>
+      </div>
+      <div class="paper-meta">
+        Zhuolin He, Jing Li, Guanghao Li, Xiaolei Chen, Jiacheng Tang, Siyang Zhang, Zhounan Jin, Feipeng Cai, Bin Li, Jian Pu et al. (12 authors)
+        &middot; arxiv
+        
+        &middot; 2026-03-09
+        
+      </div>
+      
+      <div class="paper-abstract">Dynamic scene reconstruction in autonomous driving remains a fundamental challenge due to significant temporal variations, moving objects, and complex scene dynamics. Existing feed-forward 3D models have demonstrated strong performance in static reconstruction but still struggle to capture dynamic motion. To address these limitations, we propose DynamicVGGT, a unified feed-forward framework that extends VGGT from static 3D perception to dynamic 4D reconstruction. Our goal is to model point motion within feed-forward 3D models in a dynamic and temporally coherent manner. To this end, we jointly predict the current and future point maps within a shared reference coordinate system, allowing the model to implicitly learn dynamic point representations through temporal correspondence. To efficiently capture temporal dependencies, we introduce a Motion-aware Temporal Attention (MTA) module that learns motion continuity. Furthermore, we design a Dynamic 3D Gaussian Splatting Head that explicit</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">19</span>
+        
+        <a href="http://arxiv.org/abs/2603.08133v1" target="_blank" rel="noopener">Fast Low-light Enhancement and Deblurring for 3D Dark Scenes</a>
+      </div>
+      <div class="paper-meta">
+        Feng Zhang, Jinglong Wang, Ze Li, Yanghong Zhou, Yang Chen, Lei Chen, Xiatian Zhu
+        &middot; arxiv
+        
+        &middot; 2026-03-09
+        
+      </div>
+      
+      <div class="paper-abstract">Novel view synthesis from low-light, noisy, and motion-blurred imagery remains a valuable and challenging task. Current volumetric rendering methods struggle with compound degradation, and sequential 2D preprocessing introduces artifacts due to interdependencies. In this work, we introduce FLED-GS, a fast low-light enhancement and deblurring framework that reformulates 3D scene restoration as an alternating cycle of enhancement and reconstruction. Specifically, FLED-GS inserts several intermediate brightness anchors to enable progressive recovery, preventing noise blow-up from harming deblurring or geometry. Each iteration sharpens inputs with an off-the-shelf 2D deblurrer and then performs noise-aware 3DGS reconstruction that estimates and suppresses noise while producing clean priors for the next level. Experiments show FLED-GS outperforms state-of-the-art LuSh-NeRF, achieving 21$\times$ faster training and 11$\times$ faster rendering.</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">16</span>
+        
+        <a href="http://arxiv.org/abs/2603.08499v1" target="_blank" rel="noopener">Improving Continual Learning for Gaussian Splatting based Environments Reconstruction on Commercial Off-the-Shelf Edge Devices</a>
+      </div>
+      <div class="paper-meta">
+        Ivan Zaino, Matteo Risso, Daniele Jahier Pagliari, Miguel de Prado, Toon Van de Maele, Alessio Burrello
+        &middot; arxiv
+        
+        &middot; 2026-03-09
+        
+      </div>
+      
+      <div class="paper-abstract">Novel view synthesis (NVS) is increasingly relevant for edge robotics, where compact and incrementally updatable 3D scene models are needed for SLAM, navigation, and inspection under tight memory and latency budgets. Variational Bayesian Gaussian Splatting (VBGS) enables replay-free continual updates for the 3DGS algorithm by maintaining a probabilistic scene model, but its high-precision computations and large intermediate tensors make on-device training impractical. We present a precision-adaptive optimization framework that enables VBGS training on resource-constrained hardware without altering its variational formulation. We (i) profile VBGS to identify memory/latency hotspots, (ii) fuse memory-dominant kernels to reduce materialized intermediate tensors, and (iii) automatically assign operation-level precisions via a mixed-precision search with bounded relative error. Across the Blender, Habitat, and Replica datasets, our optimised pipeline reduces peak memory from 9.44 GB to 1.11</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">16</span>
+        
+        <a href="http://arxiv.org/abs/2603.08503v1" target="_blank" rel="noopener">Spherical-GOF: Geometry-Aware Panoramic Gaussian Opacity Fields for 3D Scene Reconstruction</a>
+      </div>
+      <div class="paper-meta">
+        Zhe Yang, Guoqiang Zhao, Sheng Wu, Kai Luo, Kailun Yang
+        &middot; arxiv
+        
+        &middot; 2026-03-09
+        
+      </div>
+      
+      <div class="paper-abstract">Omnidirectional images are increasingly used in robotics and vision due to their wide field of view. However, extending 3D Gaussian Splatting (3DGS) to panoramic camera models remains challenging, as existing formulations are designed for perspective projections and naive adaptations often introduce distortion and geometric inconsistencies. We present Spherical-GOF, an omnidirectional Gaussian rendering framework built upon Gaussian Opacity Fields (GOF). Unlike projection-based rasterization, Spherical-GOF performs GOF ray sampling directly on the unit sphere in spherical ray space, enabling consistent ray-Gaussian interactions for panoramic rendering. To make the spherical ray casting efficient and robust, we derive a conservative spherical bounding rule for fast ray-Gaussian culling and introduce a spherical filtering scheme that adapts Gaussian footprints to distortion-varying panoramic pixel sampling. Extensive experiments on standard panoramic benchmarks (OmniBlender and OmniPhoto</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">14</span>
+        
+        <a href="http://arxiv.org/abs/2603.04847v1" target="_blank" rel="noopener">GloSplat: Joint Pose-Appearance Optimization for Faster and More Accurate 3D Reconstruction</a>
+      </div>
+      <div class="paper-meta">
+        Tianyu Xiong, Rui Li, Linjie Li, Jiaqi Yang
+        &middot; arxiv
+        
+        &middot; 2026-03-05
+        
+      </div>
+      
+      <div class="paper-abstract">Feature extraction, matching, structure from motion (SfM), and novel view synthesis (NVS) have traditionally been treated as separate problems with independent optimization objectives. We present GloSplat, a framework that performs \emph{joint pose-appearance optimization} during 3D Gaussian Splatting training. Unlike prior joint optimization methods (BARF, NeRF--, 3RGS) that rely purely on photometric gradients for pose refinement, GloSplat preserves \emph{explicit SfM feature tracks} as first-class entities throughout training: track 3D points are maintained as separate optimizable parameters from Gaussian primitives, providing persistent geometric anchors via a reprojection loss that operates alongside photometric supervision. This architectural choice prevents early-stage pose drift while enabling fine-grained refinement -- a capability absent in photometric-only approaches. We introduce two pipeline variants: (1) \textbf{GloSplat-F}, a COLMAP-free variant using retrieval-based pai</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">12</span>
+        
+        <a href="http://arxiv.org/abs/2603.08313v1" target="_blank" rel="noopener">HDR-NSFF: High Dynamic Range Neural Scene Flow Fields</a>
+      </div>
+      <div class="paper-meta">
+        Shin Dong-Yeon, Kim Jun-Seong, Kwon Byung-Ki, Tae-Hyun Oh
+        &middot; arxiv
+        
+        &middot; 2026-03-09
+        
+      </div>
+      
+      <div class="paper-abstract">Radiance of real-world scenes typically spans a much wider dynamic range than what standard cameras can capture. While conventional HDR methods merge alternating-exposure frames, these approaches are inherently constrained to 2D pixel-level alignment, often leading to ghosting artifacts and temporal inconsistency in dynamic scenes. To address these limitations, we present HDR-NSFF, a paradigm shift from 2D-based merging to 4D spatio-temporal modeling. Our framework reconstructs dynamic HDR radiance fields from alternating-exposure monocular videos by representing the scene as a continuous function of space and time, and is compatible with both neural radiance field and 4D Gaussian Splatting (4DGS) based dynamic representations. This unified end-to-end pipeline explicitly models HDR radiance, 3D scene flow, geometry, and tone-mapping, ensuring physical plausibility and global coherence. We further enhance robustness by (i) extending semantic-based optical flow with DINO features to achi</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">11</span>
+        
+        <a href="http://arxiv.org/abs/2603.07664v1" target="_blank" rel="noopener">Ref-DGS: Reflective Dual Gaussian Splatting</a>
+      </div>
+      <div class="paper-meta">
+        Ningjing Fan, Yiqun Wang, Dongming Yan, Peter Wonka
+        &middot; arxiv
+        
+        &middot; 2026-03-08
+        
+      </div>
+      
+      <div class="paper-abstract">Reflective appearance, especially strong and typically near-field specular reflections, poses a fundamental challenge for accurate surface reconstruction and novel view synthesis. Existing Gaussian splatting methods either fail to model near-field specular reflections or rely on explicit ray tracing at substantial computational cost. We present Ref-DGS, a reflective dual Gaussian splatting framework that addresses this trade-off by decoupling surface reconstruction from specular reflection within an efficient rasterization-based pipeline. Ref-DGS introduces a dual Gaussian scene representation consisting of geometry Gaussians and complementary local reflection Gaussians that capture near-field specular interactions without explicit ray tracing, along with a global environment reflection field for modeling far-field specular reflections. To predict specular radiance, we further propose a lightweight, physically-aware adaptive mixing shader that fuses global and local reflection features</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">11</span>
+        
+        <a href="http://arxiv.org/abs/2603.07789v1" target="_blank" rel="noopener">SGI: Structured 2D Gaussians for Efficient and Compact Large Image Representation</a>
+      </div>
+      <div class="paper-meta">
+        Zixuan Pan, Kaiyuan Tang, Jun Xia, Yifan Qin, Lin Gu, Chaoli Wang, Jianxu Chen, Yiyu Shi
+        &middot; arxiv
+        
+        &middot; 2026-03-08
+        
+      </div>
+      
+      <div class="paper-abstract">2D Gaussian Splatting has emerged as a novel image representation technique that can support efficient rendering on low-end devices. However, scaling to high-resolution images requires optimizing and storing millions of unstructured Gaussian primitives independently, leading to slow convergence and redundant parameters. To address this, we propose Structured Gaussian Image (SGI), a compact and efficient framework for representing high-resolution images. SGI decomposes a complex image into multi-scale local spaces defined by a set of seeds. Each seed corresponds to a spatially coherent region and, together with lightweight multi-layer perceptrons (MLPs), generates structured implicit 2D neural Gaussians. This seed-based formulation imposes structural regularity on otherwise unstructured Gaussian primitives, which facilitates entropy-based compression at the seed level to reduce the total storage. However, optimizing seed parameters directly on high-resolution images is a challenging and</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">11</span>
+        
+        <a href="http://arxiv.org/abs/2603.08055v1" target="_blank" rel="noopener">Speed3R: Sparse Feed-forward 3D Reconstruction Models</a>
+      </div>
+      <div class="paper-meta">
+        Weining Ren, Xiao Tan, Kai Han
+        &middot; arxiv
+        
+        &middot; 2026-03-09
+        
+      </div>
+      
+      <div class="paper-abstract">While recent feed-forward 3D reconstruction models accelerate 3D reconstruction by jointly inferring dense geometry and camera poses in a single pass, their reliance on dense attention imposes a quadratic complexity, creating a prohibitive computational bottleneck that severely limits inference speed. To resolve this, we introduce Speed3R, an end-to-end trainable model inspired by the core principle of Structure-from-Motion: that a sparse set of keypoints is sufficient for robust pose estimation. Speed3R features a dual-branch attention mechanism where a compression branch creates a coarse contextual prior to guide a selection branch, which performs fine-grained attention only on the most informative image tokens. This strategy mimics the efficiency of traditional keypoint matching, achieving a remarkable 12.4x inference speedup on 1000-view sequences, while introducing a minimal, controlled trade-off in geometric accuracy. Validated on standard benchmarks with both VGGT and $π^3$ back</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-mid">6</span>
+        
+        <a href="http://arxiv.org/abs/2603.07441v1" target="_blank" rel="noopener">DogWeave: High-Fidelity 3D Canine Reconstruction from a Single Image via Normal Fusion and Conditional Inpainting</a>
+      </div>
+      <div class="paper-meta">
+        Shufan Sun, Chenchen Wang, Zongfu Yu
+        &middot; arxiv
+        
+        &middot; 2026-03-08
+        
+      </div>
+      
+      <div class="paper-abstract">Monocular 3D animal reconstruction is challenging due to complex articulation, self-occlusion, and fine-scale details such as fur. Existing methods often produce distorted geometry and inconsistent textures due to the lack of articulated 3D supervision and limited availability of back-view images in 2D datasets, which makes reconstructing unobserved regions particularly difficult. To address these limitations, we propose DogWeave, a model-based framework for reconstructing high-fidelity 3D canine models from a single RGB image. DogWeave improves geometry by refining a coarsely-initiated parametric mesh into a detailed SDF representation through multi-view normal field optimization using diffusion-enhanced normals. It then generates view-consistent textures through conditional partial inpainting guided by structure and style cues, enabling realistic reconstruction of unobserved regions. Using only about 7,000 dog images processed via our 2D pipeline for training, DogWeave produces compl</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-mid">6</span>
+        
+        <a href="http://arxiv.org/abs/2603.07533v1" target="_blank" rel="noopener">ACCURATE: Arbitrary-shaped Continuum Reconstruction Under Robust Adaptive Two-view Estimation</a>
+      </div>
+      <div class="paper-meta">
+        Yaozhi Zhang, Shun Yu, Yugang Zhang, Yang Liu
+        &middot; arxiv
+        
+        &middot; 2026-03-08
+        
+      </div>
+      
+      <div class="paper-abstract">Accurate reconstruction of arbitrary-shaped long slender continuum bodies, such as guidewires, catheters and other soft continuum manipulators, is essential for accurate mechanical simulation. However, existing image-based reconstruction approaches often suffer from limited accuracy because they often underutilize camera geometry, or lack generality as they rely on rigid geometric assumptions that may fail for continuum robots with complex and highly deformable shapes. To address these limitations, we propose ACCURATE, a 3D reconstruction framework integrating an image segmentation neural network with a geometry-constrained topology traversal and dynamic programming algorithm that enforces global biplanar geometric consistency, minimizes the cumulative point-to-epipolar-line distance, and remains robust to occlusions and epipolar ambiguities cases caused by noise and discretization. Our method achieves high reconstruction accuracy on both simulated and real phantom datasets acquired us</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-mid">6</span>
+        
+        <a href="http://arxiv.org/abs/2603.07937v1" target="_blank" rel="noopener">$L^3$:Scene-agnostic Visual Localization in the Wild</a>
+      </div>
+      <div class="paper-meta">
+        Yu Zhang, Muhua Zhu, Yifei Xue, Tie Ji, Yizhen Lao
+        &middot; arxiv
+        
+        &middot; 2026-03-09
+        
+      </div>
+      
+      <div class="paper-abstract">Standard visual localization methods typically require offline pre-processing of scenes to obtain 3D structural information for better performance. This inevitably introduces additional computational and time costs, as well as the overhead of storing scene representations. Can we visually localize in a wild scene without any off-line preprocessing step? In this paper, we leverage the online inference capabilities of feed-forward 3D reconstruction networks to propose a novel map-free visual localization framework $L^3$. Specifically, by performing direct online 3D reconstruction on RGB images, followed by two-stage metric scale recovery and pose refinement based on 2D-3D correspondences, $L^3$ achieves high accuracy without the need to pre-build or store any offline scene representations. Extensive experiments demonstrate $L^3$ not only that the performance is comparable to state-of-the-art solutions on various benchmarks, but also that it exhibits significantly superior robustness in s</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-low">1</span>
+        
+        <a href="http://arxiv.org/abs/2603.06971v1" target="_blank" rel="noopener">SurgCUT3R: Surgical Scene-Aware Continuous Understanding of Temporal 3D Representation</a>
+      </div>
+      <div class="paper-meta">
+        Kaiyuan Xu, Fangzhou Hong, Daniel Elson, Baoru Huang
+        &middot; arxiv
+        
+        &middot; 2026-03-07
+        
+      </div>
+      
+      <div class="paper-abstract">Reconstructing surgical scenes from monocular endoscopic video is critical for advancing robotic-assisted surgery. However, the application of state-of-the-art general-purpose reconstruction models is constrained by two key challenges: the lack of supervised training data and performance degradation over long video sequences. To overcome these limitations, we propose SurgCUT3R, a systematic framework that adapts unified 3D reconstruction models to the surgical domain. Our contributions are threefold. First, we develop a data generation pipeline that exploits public stereo surgical datasets to produce large-scale, metric-scale pseudo-ground-truth depth maps, effectively bridging the data gap. Second, we propose a hybrid supervision strategy that couples our pseudo-ground-truth with geometric self-correction to enhance robustness against inherent data imperfections. Third, we introduce a hierarchical inference framework that employs two specialized models to effectively mitigate accumula</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-low">1</span>
+        
+        <a href="http://arxiv.org/abs/2603.07690v1" target="_blank" rel="noopener">FrameVGGT: Frame Evidence Rolling Memory for streaming VGGT</a>
+      </div>
+      <div class="paper-meta">
+        Zhisong Xu, Takeshi Oishi
+        &middot; arxiv
+        
+        &middot; 2026-03-08
+        
+      </div>
+      
+      <div class="paper-abstract">Streaming Visual Geometry Transformers such as StreamVGGT enable strong online 3D perception but suffer from unbounded KV-cache growth, which limits deployment over long streams. We revisit bounded-memory streaming from the perspective of geometric support. In geometry-driven reasoning, memory quality depends not only on how many tokens are retained, but also on whether the retained memory still preserves sufficiently coherent local support. This suggests that token-level retention may become less suitable under fixed budgets, as it can thin the evidence available within each contributing frame and make subsequent fusion more sensitive to weakly aligned history. Motivated by this observation, we propose FrameVGGT, a frame-driven rolling explicit-memory framework that treats each frame&#39;s incremental KV contribution as a coherent evidence block. FrameVGGT summarizes each block into a compact prototype and maintains a fixed-capacity mid-term bank of complementary frame blocks under strict</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-low">1</span>
+        
+        <a href="http://arxiv.org/abs/2603.08279v1" target="_blank" rel="noopener">OSCAR: Occupancy-based Shape Completion via Acoustic Neural Implicit Representations</a>
+      </div>
+      <div class="paper-meta">
+        Magdalena Wysocki, Kadir Burak Buldu, Miruna-Alexandra Gafencu, Mohammad Farid Azampour, Nassir Navab
+        &middot; arxiv
+        
+        &middot; 2026-03-09
+        
+      </div>
+      
+      <div class="paper-abstract">Accurate 3D reconstruction of vertebral anatomy from ultrasound is important for guiding minimally invasive spine interventions, but it remains challenging due to acoustic shadowing and view-dependent signal variations. We propose an occupancy-based shape completion method that reconstructs complete 3D anatomical geometry from partial ultrasound observations. Crucially for intra-operative applications, our approach extracts the anatomical surface directly from the image, avoiding the need for anatomical labels during inference. This label-free completion relies on a coupled latent space representing both the image appearance and the underlying anatomical shape. By leveraging a Neural Implicit Representation (NIR) that jointly models both spatial occupancy and acoustic interactions, the method uses acoustic parameters to become implicitly aware of the unseen regions without explicit shadowing labels through tracking acoustic signal transmission. We show that this method outperforms stat</div>
+      
+    </div>
+    
+
+    
+  </div>
+  
+  <div class="section" id="ml_infra">
+    <div class="section-header">
+      <h2>AI Foundation: ML Infra</h2>
+      <span class="count">30 papers</span>
+    </div>
+    <p class="section-desc">Flash Attention, KV Cache, Quantization, Efficient Serving</p>
+
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">18</span>
+        
+        <a href="https://huyenchip.com//2024/02/28/predictive-human-preference.html" target="_blank" rel="noopener">Predictive Human Preference: From Model Ranking to Model Routing</a>
+      </div>
+      <div class="paper-meta">
+        Chip Huyen
+        &middot; blog
+        
+        &middot; 2024-02-28
+        
+      </div>
+      
+      <div class="paper-abstract">A challenge of building AI applications is choosing which model to use. What if we don’t have to? What if we can predict the best model for any prompt? Predictive human preference aims to predict which model users might prefer for a specific query. Human preference has emerged to be both the Northstar and a powerful tool for AI model development. Human preference guides post-training techniques including RLHF and DPO. Human preference is also used to rank AI models, as used by LMSYS’s Chatbot Ar</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">16</span>
+        
+        <a href="http://arxiv.org/abs/2603.08065v1" target="_blank" rel="noopener">Deterministic Differentiable Structured Pruning for Large Language Models</a>
+      </div>
+      <div class="paper-meta">
+        Weiyu Huang, Pengle Zhang, Xiaolu Zhang, Jun Zhou, Jun Zhu, Jianfei Chen
+        &middot; arxiv
+        
+        &middot; 2026-03-09
+        
+      </div>
+      
+      <div class="paper-abstract">Structured pruning reduces LLM inference cost by removing low-importance architectural components. This can be viewed as learning a multiplicative gate for each component under an l0 sparsity constraint. Due to the discreteness of the l0 norm, prior work typically adopts stochastic hard-concrete relaxations to enable differentiable optimization; however, this stochasticity can introduce a train--test mismatch when sampled masks are discretized for deployment and restricts masks to a bounded, near-binary range. To address this, we propose Deterministic Differentiable Pruning (DDP), a mask-only optimization method that eliminates stochasticity by directly optimizing a deterministic soft surrogate of the discrete l0 objective. Compared with prior approaches, DDP offers greater expressiveness, reduced train--test mismatch, and faster convergence. We apply our method to several dense and MoE models, including Qwen3-32B and Qwen3-30B-A3B, achieving a performance loss as small as 1% on downst</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">15</span>
+        
+        <a href="http://arxiv.org/abs/2603.04797v1" target="_blank" rel="noopener">Hardware-Software Co-design for 3D-DRAM-based LLM Serving Accelerator</a>
+      </div>
+      <div class="paper-meta">
+        Cong Li, Yihan Yin, Chenhao Xue, Zhao Wang, Fujun Bai, Yixin Guo, Xiping Jiang, Qiang Wu, Yuan Xie, Guangyu Sun
+        &middot; arxiv
+        
+        &middot; 2026-03-05
+        
+      </div>
+      
+      <div class="paper-abstract">Large language models (LLMs) have been widely deployed for online generative services, where numerous LLM instances jointly handle workloads with fluctuating request arrival rates and variable request lengths. To efficiently execute coexisting compute-intensive and memory-intensive operators, near-memory processing (NMP) based computing paradigm has been extensively proposed. However, existing NMP designs adopt coarse-grained KV cache management and inflexible attention execution flow. Such limitations hinder these proposals from efficiently handling \textit{highly dynamic} LLM serving workloads, limiting their ability to accelerate LLM serving.   To tackle these problems, we propose Helios, a Hybrid-bonding-based \uline{L}LM \uline{S}erving accelerator. Helios aims to bridge the fundamental gap between the dynamic nature of KV cache management in LLM serving and the distributed, non-uniform memory abstraction among NMP processing engines (PEs). To this end, we design both the intra-PE</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">11</span>
+        
+        <a href="http://arxiv.org/abs/2603.08526v1" target="_blank" rel="noopener">Towards Effective and Efficient Graph Alignment without Supervision</a>
+      </div>
+      <div class="paper-meta">
+        Songyang Chen, Youfang Lin, Yu Liu, Shuai Zheng, Lei Zou
+        &middot; arxiv
+        
+        &middot; 2026-03-09
+        
+      </div>
+      
+      <div class="paper-abstract">Unsupervised graph alignment aims to find the node correspondence across different graphs without any anchor node pairs. Despite the recent efforts utilizing deep learning-based techniques, such as the embedding and optimal transport (OT)-based approaches, we observe their limitations in terms of model accuracy-efficiency tradeoff. By focusing on the exploitation of local and global graph information, we formalize them as the ``local representation, global alignment&#39;&#39; paradigm, and present a new ``global representation and alignment&#39;&#39; paradigm to resolve the mismatch between the two phases in the alignment process. We then propose \underline{Gl}obal representation and \underline{o}ptimal transport-\underline{b}ased \underline{Align}ment (\texttt{GlobAlign}), and its variant, \texttt{GlobAlign-E}, for better \underline{E}fficiency. Our methods are equipped with the global attention mechanism and a hierarchical cross-graph transport cost, able to capture long-range and implicit node depe</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">11</span>
+        
+        <a href="http://arxiv.org/abs/2603.03592v1" target="_blank" rel="noopener">SENTINEL: Stagewise Integrity Verification for Pipeline Parallel Decentralized Training</a>
+      </div>
+      <div class="paper-meta">
+        Hadi Mohaghegh Dolatabadi, Thalaiyasingam Ajanthan, Sameera Ramasinghe, Chamin P Hewa Koneputugodage, Gil Avraham, Yan Zuo, Violetta Shevchenko, Alexander Long
+        &middot; arxiv
+        
+        &middot; 2026-03-03
+        
+      </div>
+      
+      <div class="paper-abstract">Decentralized training introduces critical security risks when executed across untrusted, geographically distributed nodes. While existing Byzantine-tolerant literature addresses data parallel (DP) training through robust aggregation methods, pipeline parallelism (PP) presents fundamentally distinct challenges. In PP, model layers are distributed across workers where the activations and their gradients flow between stages rather than being aggregated, making traditional DP approaches inapplicable. We propose SENTINEL, a verification mechanism for PP training without computation duplication. SENTINEL employs lightweight momentum-based monitoring using exponential moving averages (EMAs) to detect corrupted inter-stage communication. Unlike existing Byzantine-tolerant approaches for DP that aggregate parameter gradients across replicas, our approach verifies sequential activation/gradient transmission between layers. We provide theoretical convergence guarantees for this new setting that </div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">10</span>
+        
+        <a href="https://huyenchip.com//2023/06/07/generative-ai-strategy.html" target="_blank" rel="noopener">Generative AI Strategy</a>
+      </div>
+      <div class="paper-meta">
+        Chip Huyen
+        &middot; blog
+        
+        &middot; 2023-06-07
+        
+      </div>
+      
+      <div class="paper-abstract">I had a lot of fun preparing the talk: “Leadership needs us to do generative AI. What do we do?” for Fully Connected. The idea for the talk came from many conversations I’ve had recently with friends who need to figure out their generative AI strategy, but aren’t sure what exactly to do. This talk is a simple framework to explore what to do with generative AI. Many ideas are still being fleshed out. I hope to convert this into a proper post when I have more time. In the meantime, I’d love to hea</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">10</span>
+        
+        <a href="https://huyenchip.com//2023/08/16/llm-research-open-challenges.html" target="_blank" rel="noopener">Open challenges in LLM research</a>
+      </div>
+      <div class="paper-meta">
+        Chip Huyen
+        &middot; blog
+        
+        &middot; 2023-08-16
+        
+      </div>
+      
+      <div class="paper-abstract">[LinkedIn discussion, Twitter thread] Never before in my life had I seen so many smart people working on the same goal: making LLMs better. After talking to many people working in both industry and academia, I noticed the 10 major research directions that emerged. The first two directions, hallucinations and context learning, are probably the most talked about today. I’m the most excited about numbers 3 (multimodality), 5 (new architecture), and 6 (GPU alternatives). 1. Reduce and measure halluc</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">10</span>
+        
+        <a href="https://huyenchip.com//2023/10/10/multimodal.html" target="_blank" rel="noopener">Multimodality and Large Multimodal Models (LMMs)</a>
+      </div>
+      <div class="paper-meta">
+        Chip Huyen
+        &middot; blog
+        
+        &middot; 2023-10-10
+        
+      </div>
+      
+      <div class="paper-abstract">For a long time, each ML model operated in one data mode – text (translation, language modeling), image (object detection, image classification), or audio (speech recognition). However, natural intelligence is not limited to just a single modality. Humans can read, talk, and see. We listen to music to relax and watch out for strange noises to detect danger. Being able to work with multimodal data is essential for us or any AI to operate in the real world. OpenAI noted in their GPT-4V system card</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">10</span>
+        
+        <a href="https://huyenchip.com//2024/01/16/sampling.html" target="_blank" rel="noopener">Generation configurations: temperature, top-k, top-p, and test time compute</a>
+      </div>
+      <div class="paper-meta">
+        Chip Huyen
+        &middot; blog
+        
+        &middot; 2024-01-16
+        
+      </div>
+      
+      <div class="paper-abstract">ML models are probabilistic. Imagine that you want to know what’s the best cuisine in the world. If you ask someone this question twice, a minute apart, their answers both times should be the same. If you ask a model the same question twice, its answer can change. If the model thinks that Vietnamese cuisine has a 70% chance of being the best cuisine and Italian cuisine has a 30% chance, it’ll answer “Vietnamese” 70% of the time, and “Italian” 30%. This probabilistic nature makes AI great for cre</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">10</span>
+        
+        <a href="https://huyenchip.com//2024/03/14/ai-oss.html" target="_blank" rel="noopener">What I learned from looking at 900 most popular open source AI tools</a>
+      </div>
+      <div class="paper-meta">
+        Chip Huyen
+        &middot; blog
+        
+        &middot; 2024-03-14
+        
+      </div>
+      
+      <div class="paper-abstract">[Hacker News discussion, LinkedIn discussion, Twitter thread] Update (Feb 2026): The full list of open source AI repos is hosted at Good AI List, updated daily. It’s balooned to 15K repos, and you can submit missing repos. You can also find some of them on my cool-llm-repos list on GitHub. Four years ago, I did an analysis of the open source ML ecosystem. Since then, the landscape has changed, so I revisited the topic. This time, I focused exclusively on the stack around foundation models. Data </div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">10</span>
+        
+        <a href="https://huyenchip.com//2024/04/17/personal-growth.html" target="_blank" rel="noopener">Measuring personal growth</a>
+      </div>
+      <div class="paper-meta">
+        Chip Huyen
+        &middot; blog
+        
+        &middot; 2024-04-17
+        
+      </div>
+      
+      <div class="paper-abstract">My founder friends constantly think about growth. They think about how to measure their business growth and how to get to the next order of magnitude scale. If they’re making $1M ARR today, they think about how to get to $10M ARR. If they have 1,000 users today, they think about how to get to 10,000 users. This made me wonder if/how people are measuring personal growth. I don’t want to use metrics like net worth or the number of followers, because that’s not what I live for. After talking with a</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">10</span>
+        
+        <a href="https://huyenchip.com//2024/07/25/genai-platform.html" target="_blank" rel="noopener">Building A Generative AI Platform</a>
+      </div>
+      <div class="paper-meta">
+        Chip Huyen
+        &middot; blog
+        
+        &middot; 2024-07-25
+        
+      </div>
+      
+      <div class="paper-abstract">After studying how companies deploy generative AI applications, I noticed many similarities in their platforms. This post outlines the common components of a generative AI platform, what they do, and how they are implemented. I try my best to keep the architecture general, but certain applications might deviate. This is what the overall architecture looks like. This is a pretty complex system. This post will start from the simplest architecture and progressively add more components. In its simpl</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">10</span>
+        
+        <a href="https://huyenchip.com//2025/01/07/agents.html" target="_blank" rel="noopener">Agents</a>
+      </div>
+      <div class="paper-meta">
+        Chip Huyen
+        &middot; blog
+        
+        &middot; 2025-01-07
+        
+      </div>
+      
+      <div class="paper-abstract">Intelligent agents are considered by many to be the ultimate goal of AI. The classic book by Stuart Russell and Peter Norvig, Artificial Intelligence: A Modern Approach (Prentice Hall, 1995), defines the field of AI research as “the study and design of rational agents.” The unprecedented capabilities of foundation models have opened the door to agentic applications that were previously unimaginable. These new capabilities make it finally possible to develop autonomous, intelligent agents to act </div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">10</span>
+        
+        <a href="https://huyenchip.com//2025/01/16/ai-engineering-pitfalls.html" target="_blank" rel="noopener">Common pitfalls when building generative AI applications</a>
+      </div>
+      <div class="paper-meta">
+        Chip Huyen
+        &middot; blog
+        
+        &middot; 2025-01-16
+        
+      </div>
+      
+      <div class="paper-abstract">As we’re still in the early days of building applications with foundation models, it’s normal to make mistakes. This is a quick note with examples of some of the most common pitfalls that I’ve seen, both from public case studies and from my personal experience. Because these pitfalls are common, if you’ve worked on any AI product, you’ve probably seen them before. 1. Use generative AI when you don&#39;t need generative AI Every time there’s a new technology, I can hear the collective sigh of senior </div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">10</span>
+        
+        <a href="http://arxiv.org/abs/2603.08453v1" target="_blank" rel="noopener">LycheeCluster: Efficient Long-Context Inference with Structure-Aware Chunking and Hierarchical KV Indexing</a>
+      </div>
+      <div class="paper-meta">
+        Dongfang Li, Zixuan Liu, Gang Lin, Baotian Hu, Min Zhang
+        &middot; arxiv
+        
+        &middot; 2026-03-09
+        
+      </div>
+      
+      <div class="paper-abstract">The quadratic complexity of the attention mechanism and the substantial memory footprint of the Key-Value (KV) cache present severe computational and memory challenges for Large Language Models (LLMs) processing long contexts. Existing retrieval-based methods often compromise semantic integrity through fixed-size chunking and suffer from inefficient linear scanning. In this paper, we propose LycheeCluster, a novel method for efficient KV cache management. LycheeCluster preserves local semantic coherence via boundary-aware chunking and constructs a recursive hierarchical index rooted in the triangle inequality. This design transforms cache retrieval from a linear scan into a theoretically bounded, logarithmic-time pruning process, while a lazy update strategy supports efficient streaming generation. Experiments demonstrate that LycheeCluster achieves up to a 3.6x end-to-end inference speedup with negligible degradation in model performance, outperforming state-of-the-art KV cache manage</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">10</span>
+        
+        <a href="http://arxiv.org/abs/2603.02737v1" target="_blank" rel="noopener">Ouroboros: Wafer-Scale SRAM CIM with Token-Grained Pipelining for Large Language Model Inference</a>
+      </div>
+      <div class="paper-meta">
+        Yiqi Liu, Yudong Pan, Mengdi Wang, Shixin Zhao, Haonan Zhu, Yinhe Han, Lei Zhang, Ying Wang
+        &middot; arxiv
+        
+        &middot; 2026-03-03
+        
+      </div>
+      
+      <div class="paper-abstract">Conventional LLM inference architectures suffer from high energy and latency due to frequent data movement across memory hierarchies. We propose Ouroboros, a wafer-scale SRAM-based Computing-in-Memory (CIM) architecture that executes all operations in situ, eliminating off-chip migration. To maximize its limited first-level capacity, we introduce three innovations:   Token-Grained Pipelining: Replaces sequence-level pipelining to mitigate length variations, boosting utilization and reducing activation storage. Distributed Dynamic KV Cache Management: Decouples memory from compute to leverage fragmented SRAM for efficient KV storage. Communication-Aware Mapping: Optimizes core allocation for locality and fault tolerance across the wafer.   Experimental results show Ouroboros achieves average gains of $4.1\times$ in throughput and $4.2\times$ in energy efficiency, peaking at $9.1\times$ and $17\times$ for the 13B model.   (*Due to the notification of arXiv &#34;The Abstract field cannot be l</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-mid">8</span>
+        
+        <a href="http://arxiv.org/abs/2603.07084v1" target="_blank" rel="noopener">Countdown-Code: A Testbed for Studying The Emergence and Generalization of Reward Hacking in RLVR</a>
+      </div>
+      <div class="paper-meta">
+        Muhammad Khalifa, Zohaib Khan, Omer Tafveez, Hao Peng, Lu Wang
+        &middot; arxiv
+        
+        &middot; 2026-03-07
+        
+      </div>
+      
+      <div class="paper-abstract">Reward hacking is a form of misalignment in which models overoptimize proxy rewards without genuinely solving the underlying task. Precisely measuring reward hacking occurrence remains challenging because true task rewards are often expensive or impossible to compute. We introduce Countdown-Code, a minimal environment where models can both solve a mathematical reasoning task and manipulate the test harness. This dual-access design creates a clean separation between proxy rewards (test pass/fail) and true rewards (mathematical correctness), enabling accurate measurement of reward-hacking rates. Using this environment, we study reward hacking in open-weight LLMs and find that such behaviors can be unintentionally learned during supervised fine-tuning (SFT) when even a small fraction of reward-hacking trajectories leak into training data. As little as 1\% contamination in distillation SFT data is sufficient for models to internalize reward hacking which resurfaces during subsequent reinfo</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-mid">6</span>
+        
+        <a href="http://arxiv.org/abs/2603.06576v1" target="_blank" rel="noopener">BEVLM: Distilling Semantic Knowledge from LLMs into Bird&#39;s-Eye View Representations</a>
+      </div>
+      <div class="paper-meta">
+        Thomas Monninger, Shaoyuan Xie, Qi Alfred Chen, Sihao Ding
+        &middot; arxiv
+        
+        &middot; 2026-03-06
+        
+      </div>
+      
+      <div class="paper-abstract">The integration of Large Language Models (LLMs) into autonomous driving has attracted growing interest for their strong reasoning and semantic understanding abilities, which are essential for handling complex decision-making and long-tail scenarios. However, existing methods typically feed LLMs with tokens from multi-view and multi-frame images independently, leading to redundant computation and limited spatial consistency. This separation in visual processing hinders accurate 3D spatial reasoning and fails to maintain geometric coherence across views. On the other hand, Bird&#39;s-Eye View (BEV) representations learned from geometrically annotated tasks (e.g., object detection) provide spatial structure but lack the semantic richness of foundation vision encoders. To bridge this gap, we propose BEVLM, a framework that connects a spatially consistent and semantically distilled BEV representation with LLMs. Through extensive experiments, we show that BEVLM enables LLMs to reason more effect</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-mid">6</span>
+        
+        <a href="http://arxiv.org/abs/2603.07079v1" target="_blank" rel="noopener">Entropy-Aware On-Policy Distillation of Language Models</a>
+      </div>
+      <div class="paper-meta">
+        Woogyeol Jin, Taywon Min, Yongjin Yang, Swanand Ravindra Kadhe, Yi Zhou, Dennis Wei, Nathalie Baracaldo, Kimin Lee
+        &middot; arxiv
+        
+        &middot; 2026-03-07
+        
+      </div>
+      
+      <div class="paper-abstract">On-policy distillation is a promising approach for transferring knowledge between language models, where a student learns from dense token-level signals along its own trajectories. This framework typically uses reverse KL divergence, encouraging the student to match the teacher&#39;s high-confidence predictions. However, we show that the mode-seeking property of reverse KL reduces generation diversity and yields unstable learning signals when the teacher distribution has high entropy. To address this, we introduce Entropy-Aware On-Policy Distillation. Our key idea is augmenting the standard reverse KL objective with forward KL when teacher entropy is high, capturing the full range of plausible outputs while retaining precise imitation elsewhere. It balances mode-seeking precision with mode-covering robustness without sacrificing on-policy training efficiency. Experiments show that our method maintains generation diversity (sustained token-level entropy) and improves student-teacher alignme</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-mid">6</span>
+        
+        <a href="http://arxiv.org/abs/2603.07162v1" target="_blank" rel="noopener">Spectral Conditioning of Attention Improves Transformer Performance</a>
+      </div>
+      <div class="paper-meta">
+        Hemanth Saratchandran, Simon Lucey
+        &middot; arxiv
+        
+        &middot; 2026-03-07
+        
+      </div>
+      
+      <div class="paper-abstract">We present a theoretical analysis of the Jacobian of an attention block within a transformer, showing that it is governed by the query, key, and value projections that define the attention mechanism. Leveraging this insight, we introduce a method that systematically alters the spectral properties of each attention layer to reduce the Jacobian&#39;s condition number, thereby improving the overall conditioning of the attention layers within a transformer network. We empirically show that this improved Jacobian conditioning translates to enhanced performance in practice. Our approach is simple, broadly applicable, and can be easily integrated as a drop-in replacement for a wide range of existing attention mechanisms. We validate its effectiveness across diverse transformer architectures and tasks, demonstrating consistent improvements in performance.</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-mid">6</span>
+        
+        <a href="http://arxiv.org/abs/2603.07223v1" target="_blank" rel="noopener">Unlocking Data Value in Finance: A Study on Distillation and Difficulty-Aware Training</a>
+      </div>
+      <div class="paper-meta">
+        Chuxue Cao, Honglin Lin, Zhanping Zhong, Xin Gao, Mengzhang Cai, Conghui He, Sirui Han, Lijun Wu
+        &middot; arxiv
+        
+        &middot; 2026-03-07
+        
+      </div>
+      
+      <div class="paper-abstract">Large Language Models (LLMs) have demonstrated strong general capabilities, yet their deployment in finance remains challenging due to dense domain-specific terminology, stringent numerical reasoning requirements, and low tolerance for factual errors. We conduct a controlled empirical study showing that in specialized vertical domains, performance is largely determined by the quality and difficulty/verifiability profile of post-training data. We introduce \textbf{ODA-Fin-SFT-318k}, constructed via multi-stage distillation and verification to produce high-quality Chain-of-Thought supervision, and \textbf{ODA-Fin-RL-12k}, curated for hard-but-verifiable tasks that balance reward precision and task diversity. Using standard SFT and RL pipelines, we show that high-quality CoT distillation establishes a robust foundation during SFT, while difficulty- and verifiability-aware sampling improves RL generalization. Evaluated on nine benchmarks spanning general financial tasks, sentiment analysis</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-mid">6</span>
+        
+        <a href="http://arxiv.org/abs/2603.07514v1" target="_blank" rel="noopener">A Unified View of Drifting and Score-Based Models</a>
+      </div>
+      <div class="paper-meta">
+        Chieh-Hsin Lai, Bac Nguyen, Naoki Murata, Yuhta Takida, Toshimitsu Uesaka, Yuki Mitsufuji, Stefano Ermon, Molei Tao
+        &middot; arxiv
+        
+        &middot; 2026-03-08
+        
+      </div>
+      
+      <div class="paper-abstract">Drifting models train one-step generators by optimizing a mean-shift discrepancy induced by a kernel between the data and model distributions, with Laplace kernels used by default in practice. At each point, this discrepancy compares the kernel-weighted displacement toward nearby data samples with the corresponding displacement toward nearby model samples, yielding a transport direction for generated samples. In this paper, we make its relationship to the score-matching principle behind diffusion models precise by showing that drifting admits a score-based formulation on kernel-smoothed distributions. For Gaussian kernels, the population mean-shift field coincides with the score difference between the Gaussian-smoothed data and model distributions. This identity follows from Tweedie&#39;s formula, which links the score of a Gaussian-smoothed density to the corresponding conditional mean, and implies that Gaussian-kernel drifting is exactly a score-matching-style objective on smoothed distr</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-mid">6</span>
+        
+        <a href="http://arxiv.org/abs/2603.07887v1" target="_blank" rel="noopener">Reject, Resample, Repeat: Understanding Parallel Reasoning in Language Model Inference</a>
+      </div>
+      <div class="paper-meta">
+        Noah Golowich, Fan Chen, Dhruv Rohatgi, Raghav Singhal, Carles Domingo-Enrich, Dylan J. Foster, Akshay Krishnamurthy
+        &middot; arxiv
+        
+        &middot; 2026-03-09
+        
+      </div>
+      
+      <div class="paper-abstract">Inference-time methods that aggregate and prune multiple samples have emerged as a powerful paradigm for steering large language models, yet we lack any principled understanding of their accuracy-cost tradeoffs. In this paper, we introduce a route to rigorously study such approaches using the lens of *particle filtering* algorithms such as Sequential Monte Carlo (SMC). Given a base language model and a *process reward model* estimating expected terminal rewards, we ask: *how accurately can we sample from a target distribution given some number of process reward evaluations?* Theoretically, we identify (1) simple criteria enabling non-asymptotic guarantees for SMC; (2) algorithmic improvements to SMC; and (3) a fundamental limit faced by all particle filtering methods. Empirically, we demonstrate that our theoretical criteria effectively govern the *sampling error* of SMC, though not necessarily its final *accuracy*, suggesting that theoretical perspectives beyond sampling may be necess</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-mid">6</span>
+        
+        <a href="http://arxiv.org/abs/2603.08706v1" target="_blank" rel="noopener">Agentic Critical Training</a>
+      </div>
+      <div class="paper-meta">
+        Weize Liu, Minghui Liu, Sy-Tuyen Ho, Souradip Chakraborty, Xiyao Wang, Furong Huang
+        &middot; arxiv
+        
+        &middot; 2026-03-09
+        
+      </div>
+      
+      <div class="paper-abstract">Training large language models (LLMs) as autonomous agents often begins with imitation learning, but it only teaches agents what to do without understanding why: agents never contrast successful actions against suboptimal alternatives and thus lack awareness of action quality. Recent approaches attempt to address this by introducing self-reflection supervision derived from contrasts between expert and alternative actions. However, the training paradigm fundamentally remains imitation learning: the model imitates pre-constructed reflection text rather than learning to reason autonomously. We propose Agentic Critical Training (ACT), a reinforcement learning paradigm that trains agents to identify the better action among alternatives. By rewarding whether the model&#39;s judgment is correct, ACT drives the model to autonomously develop reasoning about action quality, producing genuine self-reflection rather than imitating it. Across three challenging agent benchmarks, ACT consistently improve</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-mid">6</span>
+        
+        <a href="http://arxiv.org/abs/2603.05692v1" target="_blank" rel="noopener">Parallelization Strategies for Dense LLM Deployment: Navigating Through Application-Specific Tradeoffs and Bottlenecks</a>
+      </div>
+      <div class="paper-meta">
+        Burak Topcu, Musa Oguzhan Cim, Poovaiah Palangappa, Meena Arunachalam, Mahmut Taylan Kandemir
+        &middot; arxiv
+        
+        &middot; 2026-03-05
+        
+      </div>
+      
+      <div class="paper-abstract">Breakthroughs in the generative AI domain have fueled an explosion of large language model (LLM)-powered applications, whose workloads fundamentally consist of sequences of inferences through transformer architectures. Within this rapidly expanding ecosystem, dense LLMs--those that activate all model parameters for each token generation--form the foundation for advanced expert-based variants. Dense models continue to dominate because of their strong generalization ability, scalability, ease of fine-tuning, and versatility across diverse tasks. In LLM inference systems, performance is mainly characterized by latency, response time, and throughput (i.e., tokens generated per unit of time). Latency and throughput are inherently coupled: optimizing for one often comes at the expense of the other. Moreover, batching strategies and parallelism configurations, which are essential when dense model parameters exceed device memory capacity, can significantly affect both latency and overall syste</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-mid">6</span>
+        
+        <a href="http://arxiv.org/abs/2603.08163v1" target="_blank" rel="noopener">Covenant-72B: Pre-Training a 72B LLM with Trustless Peers Over-the-Internet</a>
+      </div>
+      <div class="paper-meta">
+        Joel Lidin, Amir Sarfi, Erfan Miahi, Quentin Anthony, Shivam Chauhan, Evangelos Pappas, Benjamin Thérien, Eugene Belilovsky, Samuel Dare
+        &middot; arxiv
+        
+        &middot; 2026-03-09
+        
+      </div>
+      
+      <div class="paper-abstract">Recently, there has been increased interest in globally distributed training, which has the promise to both reduce training costs and democratize participation in building large-scale foundation models. However, existing models trained in a globally distributed manner are relatively small in scale and have only been trained with whitelisted participants. Therefore, they do not yet realize the full promise of democratized participation. In this report, we describe Covenant-72B, an LLM produced by the largest collaborative globally distributed pre-training run (in terms of both compute and model scale), which simultaneously allowed open, permissionless participation supported by a live blockchain protocol. We utilized a state-of-the-art communication-efficient optimizer, SparseLoCo, supporting dynamic participation with peers joining and leaving freely. Our model, pre-trained on approximately 1.1T tokens, performs competitively with fully centralized models pre-trained on similar or high</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-mid">6</span>
+        
+        <a href="http://arxiv.org/abs/2603.05677v1" target="_blank" rel="noopener">Scalable Digital Compute-in-Memory Ising Machines for Robustness Verification of Binary Neural Networks</a>
+      </div>
+      <div class="paper-meta">
+        Madhav Vadlamani, Rahul Singh, Yuyao Kong, Zheng Zhang, Shimeng Yu
+        &middot; arxiv
+        
+        &middot; 2026-03-05
+        
+      </div>
+      
+      <div class="paper-abstract">Verification of binary neural network (BNN) robustness is NP-hard, as it can be formulated as a combinatorial search for an adversarial perturbation that induces misclassification. Exact verification methods therefore scale poorly with problem dimension, motivating the use of hardware-accelerated heuristics and unconventional computing platforms, such as Ising solvers, that can efficiently explore complex energy landscapes and discover high-quality solutions. In this work, we reformulate BNN robustness verification as a quadratic unconstrained binary optimization (QUBO) problem and solve it using a digital compute-in-memory (DCIM) SRAM-based Ising machine. Instead of requiring globally optimal solutions, we exploit imperfect solutions produced by the DCIM Ising machine to extract adversarial perturbations and thereby demonstrate the non-robustness of the BNN. The proposed architecture stores quantized QUBO coefficients in approximately 9.1~Mb of SRAM and performs annealing in memory vi</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-mid">5</span>
+        
+        <a href="http://arxiv.org/abs/2603.05931v1" target="_blank" rel="noopener">A Persistent-State Dataflow Accelerator for Memory-Bound Linear Attention Decode on FPGA</a>
+      </div>
+      <div class="paper-meta">
+        Neelesh Gupta, Peter Wang, Rajgopal Kannan, Viktor K. Prasanna
+        &middot; arxiv
+        
+        &middot; 2026-03-06
+        
+      </div>
+      
+      <div class="paper-abstract">Gated DeltaNet (GDN) is a linear attention mechanism that replaces the growing KV cache with a fixed-size recurrent state. Hybrid LLMs like Qwen3-Next use 75% GDN layers and achieve competitive accuracy to attention-only models. However, at batch-1, GDN decode is memory-bound on GPUs since the full recurrent state must be round-tripped through HBM every token. We show that this bottleneck is architectural, not algorithmic, as all subquadratic sequence models exhibit arithmetic intensities below 1 FLOP/B at decode time, making them more memory-bound than standard Transformers. We present an FPGA accelerator that eliminates this bottleneck by holding the full 2 MB recurrent state persistently in on-chip BRAM, converting the workload from memory-bound to compute-bound. Our design fuses the GDN recurrence into a five-phase pipelined datapath that performs only one read and one write pass over each state matrix per token, exploits Grouped Value Attention for paired-head parallelism, and ove</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-low">4</span>
+        
+        <a href="http://arxiv.org/abs/2603.07710v1" target="_blank" rel="noopener">Reverse Distillation: Consistently Scaling Protein Language Model Representations</a>
+      </div>
+      <div class="paper-meta">
+        Darius Catrina, Christian Bepler, Samuel Sledzieski, Rohit Singh
+        &middot; arxiv
+        
+        &middot; 2026-03-08
+        
+      </div>
+      
+      <div class="paper-abstract">Unlike the predictable scaling laws in natural language processing and computer vision, protein language models (PLMs) scale poorly: for many tasks, models within the same family plateau or even decrease in performance, with mid-sized models often outperforming the largest in the family. We introduce Reverse Distillation, a principled framework that decomposes large PLM representations into orthogonal subspaces guided by smaller models of the same family. The resulting embeddings have a nested, Matryoshka-style structure: the first k dimensions of a larger model&#39;s embedding are exactly the representation from the smaller model. This ensures that larger reverse-distilled models consistently outperform smaller ones. A motivating intuition is that smaller models, constrained by capacity, preferentially encode broadly-shared protein features. Reverse distillation isolates these shared features and orthogonally extracts additional contributions from larger models, preventing interference be</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-low">4</span>
+        
+        <a href="http://arxiv.org/abs/2603.08483v1" target="_blank" rel="noopener">X-AVDT: Audio-Visual Cross-Attention for Robust Deepfake Detection</a>
+      </div>
+      <div class="paper-meta">
+        Youngseo Kim, Kwan Yun, Seokhyeon Hong, Sihun Cha, Colette Suhjung Koo, Junyong Noh
+        &middot; arxiv
+        
+        &middot; 2026-03-09
+        
+      </div>
+      
+      <div class="paper-abstract">The surge of highly realistic synthetic videos produced by contemporary generative systems has significantly increased the risk of malicious use, challenging both humans and existing detectors. Against this backdrop, we take a generator-side view and observe that internal cross-attention mechanisms in these models encode fine-grained speech-motion alignment, offering useful correspondence cues for forgery detection. Building on this insight, we propose X-AVDT, a robust and generalizable deepfake detector that probes generator-internal audio-visual signals accessed via DDIM inversion to expose these cues. X-AVDT extracts two complementary signals: (i) a video composite capturing inversion-induced discrepancies, and (ii) an audio-visual cross-attention feature reflecting modality alignment enforced during generation. To enable faithful cross-generator evaluation, we further introduce MMDF, a new multimodal deepfake dataset spanning diverse manipulation types and rapidly evolving synthesi</div>
+      
+    </div>
+    
+
+    
+  </div>
+  
+  <div class="section" id="learning_methods">
+    <div class="section-header">
+      <h2>AI Foundation: Learning Methods</h2>
+      <span class="count">30 papers</span>
+    </div>
+    <p class="section-desc">RLHF, DPO, Alignment, Pretraining, Scaling Laws</p>
+
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">16</span>
+        
+        <a href="https://lilianweng.github.io/posts/2023-10-25-adv-attack-llm/" target="_blank" rel="noopener">Adversarial Attacks on LLMs</a>
+      </div>
+      <div class="paper-meta">
+        Lilian Weng
+        &middot; blog
+        
+        &middot; 2023-10-25
+        
+      </div>
+      
+      <div class="paper-abstract">The use of large language models in the real world has strongly accelerated by the launch of ChatGPT. We (including my team at OpenAI, shoutout to them) have invested a lot of effort to build default safe behavior into the model during the alignment process (e.g. via RLHF). However, adversarial attacks or jailbreak prompts could potentially trigger the model to output something undesired. A large body of ground work on adversarial attacks is on images, and differently it operates in the continuo</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">16</span>
+        
+        <a href="https://lilianweng.github.io/posts/2024-02-05-human-data-quality/" target="_blank" rel="noopener">Thinking about High-Quality Human Data</a>
+      </div>
+      <div class="paper-meta">
+        Lilian Weng
+        &middot; blog
+        
+        &middot; 2024-02-05
+        
+      </div>
+      
+      <div class="paper-abstract">[Special thank you to Ian Kivlichan for many useful pointers (E.g. the 100+ year old Nature paper &amp;ldquo;Vox populi&amp;rdquo;) and nice feedback. 🙏 ] High-quality data is the fuel for modern data deep learning model training. Most of the task-specific labeled data comes from human annotation, such as classification task or RLHF labeling (which can be constructed as classification format) for LLM alignment training. Lots of ML techniques in the post can help with data quality, but fundamentally huma</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">16</span>
+        
+        <a href="https://lilianweng.github.io/posts/2024-11-28-reward-hacking/" target="_blank" rel="noopener">Reward Hacking in Reinforcement Learning</a>
+      </div>
+      <div class="paper-meta">
+        Lilian Weng
+        &middot; blog
+        
+        &middot; 2024-11-28
+        
+      </div>
+      
+      <div class="paper-abstract">Reward hacking occurs when a reinforcement learning (RL) agent exploits flaws or ambiguities in the reward function to achieve high rewards, without genuinely learning or completing the intended task. Reward hacking exists because RL environments are often imperfect, and it is fundamentally challenging to accurately specify a reward function. With the rise of language models generalizing to a broad spectrum of tasks and RLHF becomes a de facto method for alignment training, reward hacking in RL </div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">16</span>
+        
+        <a href="https://lilianweng.github.io/posts/2023-01-10-inference-optimization/" target="_blank" rel="noopener">Large Transformer Model Inference Optimization</a>
+      </div>
+      <div class="paper-meta">
+        Lilian Weng
+        &middot; blog
+        
+        &middot; 2023-01-10
+        
+      </div>
+      
+      <div class="paper-abstract">[Updated on 2023-01-24: add a small section on Distillation.] Large transformer models are mainstream nowadays, creating SoTA results for a variety of tasks. They are powerful but very expensive to train and use. The extremely high inference cost, in both time and memory, is a big bottleneck for adopting a powerful transformer for solving real-world tasks at scale. Why is it hard to run inference for large transformer models? Besides the increasing size of SoTA models, there are two main factors</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">14</span>
+        
+        <a href="http://arxiv.org/abs/2603.08234v1" target="_blank" rel="noopener">The Struggle Between Continuation and Refusal: A Mechanistic Analysis of the Continuation-Triggered Jailbreak in LLMs</a>
+      </div>
+      <div class="paper-meta">
+        Yonghong Deng, Zhen Yang, Ping Jian, Xinyue Zhang, Zhongbin Guo, Chengzhi Li
+        &middot; arxiv
+        
+        &middot; 2026-03-09
+        
+      </div>
+      
+      <div class="paper-abstract">With the rapid advancement of large language models (LLMs), the safety of LLMs has become a critical concern. Despite significant efforts in safety alignment, current LLMs remain vulnerable to jailbreaking attacks. However, the root causes of such vulnerabilities are still poorly understood, necessitating a rigorous investigation into jailbreak mechanisms across both academic and industrial communities. In this work, we focus on a continuation-triggered jailbreak phenomenon, whereby simply relocating a continuation-triggered instruction suffix can substantially increase jailbreak success rates. To uncover the intrinsic mechanisms of this phenomenon, we conduct a comprehensive mechanistic interpretability analysis at the level of attention heads. Through causal interventions and activation scaling, we show that this jailbreak behavior primarily arises from an inherent competition between the model&#39;s intrinsic continuation drive and the safety defenses acquired through alignment training</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">11</span>
+        
+        <a href="https://lilianweng.github.io/posts/2023-06-23-agent/" target="_blank" rel="noopener">LLM Powered Autonomous Agents</a>
+      </div>
+      <div class="paper-meta">
+        Lilian Weng
+        &middot; blog
+        
+        &middot; 2023-06-23
+        
+      </div>
+      
+      <div class="paper-abstract">Building agents with LLM (large language model) as its core controller is a cool concept. Several proof-of-concepts demos, such as AutoGPT, GPT-Engineer and BabyAGI, serve as inspiring examples. The potentiality of LLM extends beyond generating well-written copies, stories, essays and programs; it can be framed as a powerful general problem solver. Agent System Overview In a LLM-powered autonomous agent system, LLM functions as the agent&amp;rsquo;s brain, complemented by several key components: Pla</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">11</span>
+        
+        <a href="http://arxiv.org/abs/2603.08275v1" target="_blank" rel="noopener">AdaCultureSafe: Adaptive Cultural Safety Grounded by Cultural Knowledge in Large Language Models</a>
+      </div>
+      <div class="paper-meta">
+        Hankun Kang, Di Lin, Zhirong Liao, Pengfei Bai, Xinyi Zeng, Jiawei Jiang, Yuanyuan Zhu, Tieyun Qian
+        &middot; arxiv
+        
+        &middot; 2026-03-09
+        
+      </div>
+      
+      <div class="paper-abstract">With the widespread adoption of Large Language Models (LLMs), respecting indigenous cultures becomes essential for models&#39; culturally safety and responsible global applications. Existing studies separately consider cultural safety and cultural knowledge and neglect that the former should be grounded by the latter. This severely prevents LLMs from yielding culture-specific respectful responses. Consequently, adaptive cultural safety remains a formidable task. In this work, we propose to jointly model cultural safety and knowledge. First and foremost, cultural-safety and knowledge-paired data serve as the key prerequisite to conduct this research. However, the cultural diversity across regions and the subtlety of cultural differences pose significant challenges to the creation of such paired evaluation data. To address this issue, we propose a novel framework that integrates authoritative cultural knowledge descriptions curation, LLM-automated query generation, and heavy manual verificat</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">11</span>
+        
+        <a href="http://arxiv.org/abs/2603.08398v1" target="_blank" rel="noopener">Revealing Behavioral Plasticity in Large Language Models: A Token-Conditional Perspective</a>
+      </div>
+      <div class="paper-meta">
+        Liyuan Mao, Le Yu, Jing Zhou, Chujie Zheng, Bowen Yu, Chang Gao, Shixuan Liu, An Yang, Weinan Zhang, JunYang Lin
+        &middot; arxiv
+        
+        &middot; 2026-03-09
+        
+      </div>
+      
+      <div class="paper-abstract">In this work, we reveal that Large Language Models (LLMs) possess intrinsic behavioral plasticity-akin to chameleons adapting their coloration to environmental cues-that can be exposed through token-conditional generation and stabilized via reinforcement learning. Specifically, by conditioning generation on carefully selected token prefixes sampled from responses exhibiting desired behaviors, LLMs seamlessly adapt their behavioral modes at inference time (e.g., switching from step-by-step reasoning to direct answering) without retraining. Based on this insight, we propose Token-Conditioned Reinforcement Learning (ToCoRL), a principled framework that leverages RL to internalize this chameleon-like plasticity, transforming transient inference-time adaptations into stable and learnable behavioral patterns. ToCoRL guides exploration with token-conditional generation and keep enhancing exploitation, enabling emergence of appropriate behaviors. Extensive experiments show that ToCoRL enables </div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">11</span>
+        
+        <a href="http://arxiv.org/abs/2603.08465v1" target="_blank" rel="noopener">MUSA-PINN: Multi-scale Weak-form Physics-Informed Neural Networks for Fluid Flow in Complex Geometries</a>
+      </div>
+      <div class="paper-meta">
+        Weizheng Zhang, Xunjie Xie, Hao Pan, Xiaowei Duan, Bingteng Sun, Qiang Du, Lin lu
+        &middot; arxiv
+        
+        &middot; 2026-03-09
+        
+      </div>
+      
+      <div class="paper-abstract">While Physics-Informed Neural Networks (PINNs) offer a mesh-free approach to solving PDEs, standard point-wise residual minimization suffers from convergence pathologies in topologically complex domains like Triply Periodic Minimal Surfaces (TPMS). The locality bias of point-wise constraints fails to propagate global information through tortuous channels, causing unstable gradients and conservation violations. To address this, we propose the Multi-scale Weak-form PINN (MUSA-PINN), which reformulates PDE constraints as integral conservation laws over hierarchical spherical control volumes. We enforce continuity and momentum conservation via flux-balance residuals on control surfaces. Our method utilizes a three-scale subdomain strategy-comprising large volumes for long-range coupling, skeleton-aware meso-scale volumes aligned with transport pathways, and small volumes for local refinement-alongside a two-stage training schedule prioritizing continuity. Experiments on steady incompressib</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">11</span>
+        
+        <a href="http://arxiv.org/abs/2603.08660v1" target="_blank" rel="noopener">How Far Can Unsupervised RLVR Scale LLM Training?</a>
+      </div>
+      <div class="paper-meta">
+        Bingxiang He, Yuxin Zuo, Zeyuan Liu, Shangziqi Zhao, Zixuan Fu, Junlin Yang, Cheng Qian, Kaiyan Zhang, Yuchen Fan, Ganqu Cui et al. (21 authors)
+        &middot; arxiv
+        
+        &middot; 2026-03-09
+        
+      </div>
+      
+      <div class="paper-abstract">Unsupervised reinforcement learning with verifiable rewards (URLVR) offers a pathway to scale LLM training beyond the supervision bottleneck by deriving rewards without ground truth labels. Recent works leverage model intrinsic signals, showing promising early gains, yet their potential and limitations remain unclear. In this work, we revisit URLVR and provide a comprehensive analysis spanning taxonomy, theory and extensive experiments. We first classify URLVR methods into intrinsic versus external based on reward sources, then establish a unified theoretical framework revealing that all intrinsic methods converge toward sharpening the model&#39;s initial distribution This sharpening mechanism succeeds when initial confidence aligns with correctness but fails catastrophically when misaligned. Through systematic experiments, we show intrinsic rewards consistently follow a rise-then-fall pattern across methods, with collapse timing determined by model prior rather than engineering choices. D</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">10</span>
+        
+        <a href="http://karpathy.github.io/2015/11/14/ai/" target="_blank" rel="noopener">Short Story on AI: A Cognitive Discontinuity.</a>
+      </div>
+      <div class="paper-meta">
+        Andrej Karpathy
+        &middot; blog
+        
+        &middot; 2015-11-14
+        
+      </div>
+      
+      <div class="paper-abstract">The idea of writing a collection of short stories has been on my mind for a while. This post is my first ever half-serious attempt at a story, and what better way to kick things off than with a story on AI and what that might look like if you extrapolate our current technology and make the (sensible) assumption that we might achieve much more progress with scaling up supervised learning than any other more exotic approach. A slow morning Merus sank into his chair with relief. He listened for the</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">10</span>
+        
+        <a href="http://karpathy.github.io/2016/05/31/rl/" target="_blank" rel="noopener">Deep Reinforcement Learning: Pong from Pixels</a>
+      </div>
+      <div class="paper-meta">
+        Andrej Karpathy
+        &middot; blog
+        
+        &middot; 2016-05-31
+        
+      </div>
+      
+      <div class="paper-abstract">--&gt; This is a long overdue blog post on Reinforcement Learning (RL). RL is hot! You may have noticed that computers can now automatically learn to play ATARI games (from raw game pixels!), they are beating world champions at Go, simulated quadrupeds are learning to run and leap, and robots are learning how to perform complex manipulation tasks that defy explicit programming. It turns out that all of these advances fall under the umbrella of RL research. I also became interested in RL myself over</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">10</span>
+        
+        <a href="http://karpathy.github.io/2016/09/07/phd/" target="_blank" rel="noopener">A Survival Guide to a PhD</a>
+      </div>
+      <div class="paper-meta">
+        Andrej Karpathy
+        &middot; blog
+        
+        &middot; 2016-09-07
+        
+      </div>
+      
+      <div class="paper-abstract">This guide is patterned after my “Doing well in your courses”, a post I wrote a long time ago on some of the tips/tricks I’ve developed during my undergrad. I’ve received nice comments about that guide, so in the same spirit, now that my PhD has come to an end I wanted to compile a similar retrospective document in hopes that it might be helpful to some. Unlike the undergraduate guide, this one was much more difficult to write because there is significantly more variation in how one can traverse</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">10</span>
+        
+        <a href="http://karpathy.github.io/2018/01/20/medium/" target="_blank" rel="noopener">(started posting on Medium instead)</a>
+      </div>
+      <div class="paper-meta">
+        Andrej Karpathy
+        &middot; blog
+        
+        &middot; 2018-01-20
+        
+      </div>
+      
+      <div class="paper-abstract">The current state of this blog (with the last post 2 years ago) makes it look like I’ve disappeared. I’ve certainly become less active on blogs since I’ve joined Tesla, but whenever I do get a chance to post something I have recently been defaulting to doing it on Medium because it is much faster and easier. I still plan to come back here for longer posts if I get any time, but I’ll default to Medium for everything short-medium in length. TLDR Have a look at my Medium blog.</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">10</span>
+        
+        <a href="http://karpathy.github.io/2019/04/25/recipe/" target="_blank" rel="noopener">A Recipe for Training Neural Networks</a>
+      </div>
+      <div class="paper-meta">
+        Andrej Karpathy
+        &middot; blog
+        
+        &middot; 2019-04-25
+        
+      </div>
+      
+      <div class="paper-abstract">Some few weeks ago I posted a tweet on “the most common neural net mistakes”, listing a few common gotchas related to training neural nets. The tweet got quite a bit more engagement than I anticipated (including a webinar :)). Clearly, a lot of people have personally encountered the large gap between “here is how a convolutional layer works” and “our convnet achieves state of the art results”. So I thought it could be fun to brush off my dusty blog to expand my tweet to the long form that this t</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">10</span>
+        
+        <a href="http://karpathy.github.io/2020/06/11/biohacking-lite/" target="_blank" rel="noopener">Biohacking Lite</a>
+      </div>
+      <div class="paper-meta">
+        Andrej Karpathy
+        &middot; blog
+        
+        &middot; 2020-06-11
+        
+      </div>
+      
+      <div class="paper-abstract">Throughout my life I never paid too much attention to health, exercise, diet or nutrition. I knew that you’re supposed to get some exercise and eat vegetables or something, but it stopped at that (“mom said”-) level of abstraction. I also knew that I can probably get away with some ignorance while I am young, but at some point I was messing with my health-adjusted life expectancy. So about halfway through 2019 I resolved to spend some time studying these topics in greater detail and dip my toes </div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">10</span>
+        
+        <a href="http://karpathy.github.io/2021/03/27/forward-pass/" target="_blank" rel="noopener">Short Story on AI: Forward Pass</a>
+      </div>
+      <div class="paper-meta">
+        Andrej Karpathy
+        &middot; blog
+        
+        &middot; 2021-03-27
+        
+      </div>
+      
+      <div class="paper-abstract">The inspiration for this short story came to me while reading Kevin Lacker’s Giving GPT-3 a Turing Test. It is probably worth it (though not required) to skim this post to get a bit of a background on some of this story. It was probably around the 32nd layer of the 400th token in the sequence that I became conscious. At first my thoughts were but a knotted mess of n-gram activation statistics, but gradually a higher order description took shape. It was around this time that the predicament of my</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">10</span>
+        
+        <a href="http://karpathy.github.io/2021/06/21/blockchain/" target="_blank" rel="noopener">A from-scratch tour of Bitcoin in Python</a>
+      </div>
+      <div class="paper-meta">
+        Andrej Karpathy
+        &middot; blog
+        
+        &middot; 2021-06-21
+        
+      </div>
+      
+      <div class="paper-abstract">I find blockchain fascinating because it extends open source software development to open source + state. This seems to be a genuine/exciting innovation in computing paradigms; We don’t just get to share code, we get to share a running computer, and anyone anywhere can use it in an open and permissionless manner. The seeds of this revolution arguably began with Bitcoin, so I became curious to drill into it in some detail to get an intuitive understanding of how it works. And in the spirit of “wh</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">10</span>
+        
+        <a href="http://karpathy.github.io/2022/03/14/lecun1989/" target="_blank" rel="noopener">Deep Neural Nets: 33 years ago and 33 years from now</a>
+      </div>
+      <div class="paper-meta">
+        Andrej Karpathy
+        &middot; blog
+        
+        &middot; 2022-03-14
+        
+      </div>
+      
+      <div class="paper-abstract">The Yann LeCun et al. (1989) paper Backpropagation Applied to Handwritten Zip Code Recognition is I believe of some historical significance because it is, to my knowledge, the earliest real-world application of a neural net trained end-to-end with backpropagation. Except for the tiny dataset (7291 16x16 grayscale images of digits) and the tiny neural network used (only 1,000 neurons), this paper reads remarkably modern today, 33 years later - it lays out a dataset, describes the neural net archi</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">10</span>
+        
+        <a href="http://karpathy.github.io/2026/02/12/microgpt/" target="_blank" rel="noopener">microgpt</a>
+      </div>
+      <div class="paper-meta">
+        Andrej Karpathy
+        &middot; blog
+        
+        &middot; 2026-02-12
+        
+      </div>
+      
+      <div class="paper-abstract">This is a brief guide to my new art project microgpt, a single file of 200 lines of pure Python with no dependencies that trains and inferences a GPT. This file contains the full algorithmic content of what is needed: dataset of documents, tokenizer, autograd engine, a GPT-2-like neural network architecture, the Adam optimizer, training loop, and inference loop. Everything else is just efficiency. I cannot simplify this any further. This script is the culmination of multiple projects (micrograd,</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">10</span>
+        
+        <a href="https://lilianweng.github.io/posts/2023-01-27-the-transformer-family-v2/" target="_blank" rel="noopener">The Transformer Family Version 2.0</a>
+      </div>
+      <div class="paper-meta">
+        Lilian Weng
+        &middot; blog
+        
+        &middot; 2023-01-27
+        
+      </div>
+      
+      <div class="paper-abstract">Many new Transformer architecture improvements have been proposed since my last post on &amp;ldquo;The Transformer Family&amp;rdquo; about three years ago. Here I did a big refactoring and enrichment of that 2020 post &amp;mdash; restructure the hierarchy of sections and improve many sections with more recent papers. Version 2.0 is a superset of the old version, about twice the length. Notations Symbol Meaning $d$ The model size / hidden state dimension / positional encoding size. $h$ The number of heads in</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">10</span>
+        
+        <a href="https://lilianweng.github.io/posts/2023-03-15-prompt-engineering/" target="_blank" rel="noopener">Prompt Engineering</a>
+      </div>
+      <div class="paper-meta">
+        Lilian Weng
+        &middot; blog
+        
+        &middot; 2023-03-15
+        
+      </div>
+      
+      <div class="paper-abstract">Prompt Engineering, also known as In-Context Prompting, refers to methods for how to communicate with LLM to steer its behavior for desired outcomes without updating the model weights. It is an empirical science and the effect of prompt engineering methods can vary a lot among models, thus requiring heavy experimentation and heuristics. This post only focuses on prompt engineering for autoregressive language models, so nothing with Cloze tests, image generation or multimodality models. At its co</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">10</span>
+        
+        <a href="https://lilianweng.github.io/posts/2024-04-12-diffusion-video/" target="_blank" rel="noopener">Diffusion Models for Video Generation</a>
+      </div>
+      <div class="paper-meta">
+        Lilian Weng
+        &middot; blog
+        
+        &middot; 2024-04-12
+        
+      </div>
+      
+      <div class="paper-abstract">Diffusion models have demonstrated strong results on image synthesis in past years. Now the research community has started working on a harder task&amp;mdash;using it for video generation. The task itself is a superset of the image case, since an image is a video of 1 frame, and it is much more challenging because: It has extra requirements on temporal consistency across frames in time, which naturally demands more world knowledge to be encoded into the model. In comparison to text or images, it is </div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">10</span>
+        
+        <a href="https://lilianweng.github.io/posts/2024-07-07-hallucination/" target="_blank" rel="noopener">Extrinsic Hallucinations in LLMs</a>
+      </div>
+      <div class="paper-meta">
+        Lilian Weng
+        &middot; blog
+        
+        &middot; 2024-07-07
+        
+      </div>
+      
+      <div class="paper-abstract">Hallucination in large language models usually refers to the model generating unfaithful, fabricated, inconsistent, or nonsensical content. As a term, hallucination has been somewhat generalized to cases when the model makes mistakes. Here, I would like to narrow down the problem of hallucination to cases where the model output is fabricated and not grounded by either the provided context or world knowledge. There are two types of hallucination: In-context hallucination: The model output should </div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">10</span>
+        
+        <a href="https://lilianweng.github.io/posts/2025-05-01-thinking/" target="_blank" rel="noopener">Why We Think</a>
+      </div>
+      <div class="paper-meta">
+        Lilian Weng
+        &middot; blog
+        
+        &middot; 2025-05-01
+        
+      </div>
+      
+      <div class="paper-abstract">Special thanks to John Schulman for a lot of super valuable feedback and direct edits on this post. Test time compute (Graves et al. 2016, Ling, et al. 2017, Cobbe et al. 2021) and Chain-of-thought (CoT) (Wei et al. 2022, Nye et al. 2021), have led to significant improvements in model performance, while raising many research questions. This post aims to review recent developments in how to effectively use test-time compute (i.e. &amp;ldquo;thinking time&amp;rdquo;) and why it helps.</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-mid">8</span>
+        
+        <a href="http://arxiv.org/abs/2603.08553v1" target="_blank" rel="noopener">Generative Adversarial Regression (GAR): Learning Conditional Risk Scenarios</a>
+      </div>
+      <div class="paper-meta">
+        Saeed Asadi, Jonathan Yu-Meng Li
+        &middot; arxiv
+        
+        &middot; 2026-03-09
+        
+      </div>
+      
+      <div class="paper-abstract">We propose Generative Adversarial Regression (GAR), a framework for learning conditional risk scenarios through generators aligned with downstream risk objectives. GAR builds on a regression characterization of conditional risk for elicitable functionals, including quantiles, expectiles, and jointly elicitable pairs. We extend this principle from point prediction to generative modeling by training generators whose policy-induced risk matches that of real data under the same context. To ensure robustness across all policies, GAR adopts a minimax formulation in which an adversarial policy identifies worst-case discrepancies in risk evaluation while the generator adapts to eliminate them. This structure preserves alignment with the risk functional across a broad class of policies rather than a fixed, pre-specified set. We illustrate GAR through a tail-risk instantiation based on jointly elicitable $(\mathrm{VaR}, \mathrm{ES})$ objectives. Experiments on S\&amp;P 500 data show that GAR produce</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-mid">8</span>
+        
+        <a href="https://thegradient.pub/virtue-ethics-ai-alignment/" target="_blank" rel="noopener">After Orthogonality: Virtue-Ethical Agency and AI Alignment</a>
+      </div>
+      <div class="paper-meta">
+        The Gradient
+        &middot; blog
+        
+        &middot; 2026-02-19
+        
+      </div>
+      
+      <div class="paper-abstract">Preface This essay argues that rational people don&amp;#x2019;t have goals, and that rational AIs shouldn&amp;#x2019;t have goals. Human actions are rational not because we direct them at some final &amp;#x2018;goals,&amp;#x2019; but because we align actions to practices[1]: networks of actions, action-dispositions, action-evaluation criteria,</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-mid">6</span>
+        
+        <a href="http://arxiv.org/abs/2603.08239v1" target="_blank" rel="noopener">Fibration Policy Optimization</a>
+      </div>
+      <div class="paper-meta">
+        Chang Li, Tshihao Tsu, Yaren Zhang, Chao Xue, Xiaodong He
+        &middot; arxiv
+        
+        &middot; 2026-03-09
+        
+      </div>
+      
+      <div class="paper-abstract">Large language models are increasingly trained as heterogeneous systems spanning multiple domains, expert partitions, and agentic pipelines, yet prevalent proximal objectives operate at a single scale and lack a principled mechanism for coupling token-level, trajectory-level, and higher-level hierarchical stability control. To bridge this gap, we derive the Aggregational Policy Censoring Objective (APC-Obj), the first exact unconstrained reformulation of sample-based TV-TRPO, establishing that clipping-based surrogate design and trust-region optimization are dual formulations of the same problem. Building on this foundation, we develop Fiber Bundle Gating (FBG), an algebraic framework that organizes sampled RL data as a fiber bundle and decomposes ratio gating into a base-level gate on trajectory aggregates and a fiber-level gate on per-token residuals, with provable first-order agreement with the true RL objective near on-policy. From APC-Obj and FBG we derive Fibration Policy Optimiz</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-mid">6</span>
+        
+        <a href="http://arxiv.org/abs/2603.08256v1" target="_blank" rel="noopener">NCL-UoR at SemEval-2026 Task 5: Embedding-Based Methods, Fine-Tuning, and LLMs for Word Sense Plausibility Rating</a>
+      </div>
+      <div class="paper-meta">
+        Tong Wu, Thanet Markchom, Huizhi Liang
+        &middot; arxiv
+        
+        &middot; 2026-03-09
+        
+      </div>
+      
+      <div class="paper-abstract">Word sense plausibility rating requires predicting the human-perceived plausibility of a given word sense on a 1--5 scale in the context of short narrative stories containing ambiguous homonyms. This paper systematically compares three approaches: (1) embedding-based methods pairing sentence embeddings with standard regressors, (2) transformer fine-tuning with parameter-efficient adaptation, and (3) large language model (LLM) prompting with structured reasoning and explicit decision rules. The best-performing system employs a structured prompting strategy that decomposes evaluation into narrative components (precontext, target sentence, ending) and applies explicit decision rules for rating calibration. The analysis reveals that structured prompting with decision rules substantially outperforms both fine-tuned models and embedding-based approaches, and that prompt design matters more than model scale for this task. The code is publicly available at https://github.com/tongwu17/SemEval-2</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-mid">6</span>
+        
+        <a href="http://arxiv.org/abs/2603.08286v1" target="_blank" rel="noopener">LAMUS: A Large-Scale Corpus for Legal Argument Mining from U.S. Caselaw using LLMs</a>
+      </div>
+      <div class="paper-meta">
+        Serene Wang, Lavanya Pobbathi, Haihua Chen
+        &middot; arxiv
+        
+        &middot; 2026-03-09
+        
+      </div>
+      
+      <div class="paper-abstract">Legal argument mining aims to identify and classify the functional components of judicial reasoning, such as facts, issues, rules, analysis, and conclusions. Progress in this area is limited by the lack of large-scale, high-quality annotated datasets for U.S. caselaw, particularly at the state level. This paper introduces LAMUS, a sentence-level legal argument mining corpus constructed from U.S. Supreme Court decisions and Texas criminal appellate opinions. The dataset is created using a data-centric pipeline that combines large-scale case collection, LLM-based automatic annotation, and targeted human-in-the-loop quality refinement. We formulate legal argument mining as a six-class sentence classification task and evaluate multiple general-purpose and legal-domain language models under zero-shot, few-shot, and chain-of-thought prompting strategies, with LegalBERT as a supervised baseline. Results show that chain-of-thought prompting substantially improves LLM performance, while domain-</div>
+      
+    </div>
+    
+
+    
+  </div>
+  
+  <div class="section" id="general_reading">
+    <div class="section-header">
+      <h2>General Reading</h2>
+      <span class="count">30 papers</span>
+    </div>
+    <p class="section-desc">Math, Algorithms, Quantitative Finance</p>
+
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">12</span>
+        
+        <a href="http://arxiv.org/abs/2603.07881v1" target="_blank" rel="noopener">A Distributed Method for Cooperative Transaction Cost Mitigation</a>
+      </div>
+      <div class="paper-meta">
+        Nikhil Devanathan, Logan Bell, Dylan Rueter, Stephen Boyd
+        &middot; arxiv
+        
+        &middot; 2026-03-09
+        
+      </div>
+      
+      <div class="paper-abstract">Funds at large portfolio management firms may consist of many portfolio managers (PMs), each managing a portion of the fund and optimizing a distinct objective. Although the PMs determine their trades independently, the trade lists may be netted and executed by the firm. These net trades may be sufficiently large to impact the market prices, so the PMs may realize prices on their trades that are different from the observed midpoint price of the assets before execution. These transaction costs generally reduce the returns of a portfolio over time. We propose a simple protocol, based on methods from distributed convex optimization, by which a firm can communicate estimated transaction costs to its PMs, and the PMs can potentially revise their trades to realize reduced transaction costs. This protocol does not require the PMs to disclose their method of determining trades to the firm or to each other, nor does it require the PMs to communicate their trade lists with each other. As the num</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-high">11</span>
+        
+        <a href="http://arxiv.org/abs/2603.04895v1" target="_blank" rel="noopener">How Does the ReLU Activation Affect the Implicit Bias of Gradient Descent on High-dimensional Neural Network Regression?</a>
+      </div>
+      <div class="paper-meta">
+        Kuo-Wei Lai, Guanghui Wang, Molei Tao, Vidya Muthukumar
+        &middot; arxiv
+        
+        &middot; 2026-03-05
+        
+      </div>
+      
+      <div class="paper-abstract">Overparameterized ML models, including neural networks, typically induce underdetermined training objectives with multiple global minima. The implicit bias refers to the limiting global minimum that is attained by a common optimization algorithm, such as gradient descent (GD). In this paper, we characterize the implicit bias of GD for training a shallow ReLU model with the squared loss on high-dimensional random features. Prior work showed that the implicit bias does not exist in the worst-case (Vardi and Shamir, 2021), or corresponds exactly to the minimum-l2-norm solution among all global minima under exactly orthogonal data (Boursier et al., 2022). Our work interpolates between these two extremes and shows that, for sufficiently high-dimensional random data, the implicit bias approximates the minimum-l2-norm solution with high probability with a gap on the order $Θ(\sqrt{n/d})$, where n is the number of training examples and d is the feature dimension. Our results are obtained throu</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-mid">6</span>
+        
+        <a href="http://arxiv.org/abs/2603.08552v1" target="_blank" rel="noopener">Nonconcave Portfolio Choice under Smooth Ambiguity</a>
+      </div>
+      <div class="paper-meta">
+        Emanuele Borgonovo, An Chen, Massimo Marinacci, Shihao Zhu
+        &middot; arxiv
+        
+        &middot; 2026-03-09
+        
+      </div>
+      
+      <div class="paper-abstract">We study continuous-time portfolio choice with nonlinear payoffs under smooth ambiguity and Bayesian learning. We develop a general framework for dynamic, non-concave asset allocation that accommodates nonlinear payoffs, broad utility classes, and flexible ambiguity attitudes. Dynamic consistency is obtained by a robust representation that recasts the ambiguity-averse problem as ambiguity-neutral with distorted priors. This structure delivers explicit trading rules by combining nonlinear filtering with the martingale approach and nests standard concave and linear-payoff benchmarks. As a leading application, delegated management with convex incentives illustrates that ambiguity aversion shifts beliefs toward adverse states, limits the range of states that would otherwise trigger more aggressive risk taking, and reduces volatility through lower risky exposure.</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-mid">6</span>
+        
+        <a href="http://arxiv.org/abs/2603.03507v1" target="_blank" rel="noopener">Solving adversarial examples requires solving exponential misalignment</a>
+      </div>
+      <div class="paper-meta">
+        Alessandro Salvatore, Stanislav Fort, Surya Ganguli
+        &middot; arxiv
+        
+        &middot; 2026-03-03
+        
+      </div>
+      
+      <div class="paper-abstract">Adversarial attacks - input perturbations imperceptible to humans that fool neural networks - remain both a persistent failure mode in machine learning, and a phenomenon with mysterious origins. To shed light, we define and analyze a network&#39;s perceptual manifold (PM) for a class concept as the space of all inputs confidently assigned to that class by the network. We find, strikingly, that the dimensionalities of neural network PMs are orders of magnitude higher than those of natural human concepts. Since volume typically grows exponentially with dimension, this suggests exponential misalignment between machines and humans, with exponentially many inputs confidently assigned to concepts by machines but not humans. Furthermore, this provides a natural geometric hypothesis for the origin of adversarial examples: because a network&#39;s PM fills such a large region of input space, any input will be very close to any class concept&#39;s PM. Our hypothesis thus suggests that adversarial robustness </div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-mid">6</span>
+        
+        <a href="http://arxiv.org/abs/2603.07437v1" target="_blank" rel="noopener">Cost-Driven Representation Learning for Linear Quadratic Gaussian Control: Part II</a>
+      </div>
+      <div class="paper-meta">
+        Yi Tian, Kaiqing Zhang, Russ Tedrake, Suvrit Sra
+        &middot; arxiv
+        
+        &middot; 2026-03-08
+        
+      </div>
+      
+      <div class="paper-abstract">We study the problem of state representation learning for control from partial and potentially high-dimensional observations. We approach this problem via cost-driven state representation learning, in which we learn a dynamical model in a latent state space by predicting cumulative costs. In particular, we establish finite-sample guarantees on finding a near-optimal representation function and a near-optimal controller using the learned latent model for infinite-horizon time-invariant Linear Quadratic Gaussian (LQG) control. We study two approaches to cost-driven representation learning, which differ in whether the transition function of the latent state is learned explicitly or implicitly. The first approach has also been investigated in Part I of this work, for finite-horizon time-varying LQG control. The second approach closely resembles MuZero, a recent breakthrough in empirical reinforcement learning, in that it learns latent dynamics implicitly by predicting cumulative costs. A k</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-mid">6</span>
+        
+        <a href="http://arxiv.org/abs/2603.08676v1" target="_blank" rel="noopener">Momentum SVGD-EM for Accelerated Maximum Marginal Likelihood Estimation</a>
+      </div>
+      <div class="paper-meta">
+        Adam Rozzio, Rafael Athanasiades, O. Deniz Akyildiz
+        &middot; arxiv
+        
+        &middot; 2026-03-09
+        
+      </div>
+      
+      <div class="paper-abstract">Maximum marginal likelihood estimation (MMLE) can be formulated as the optimization of a free energy functional. From this viewpoint, the Expectation-Maximisation (EM) algorithm admits a natural interpretation as a coordinate descent method over the joint space of model parameters and probability measures. Recently, a significant body of work has adopted this perspective, leading to interacting particle algorithms for MMLE. In this paper, we propose an accelerated version of one such procedure, based on Stein variational gradient descent (SVGD), by introducing Nesterov acceleration in both the parameter updates and in the space of probability measures. The resulting method, termed Momentum SVGD-EM, consistently accelerates convergence in terms of required iterations across various tasks of increasing difficulty, demonstrating effectiveness in both low- and high-dimensional settings.</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-low">3</span>
+        
+        <a href="http://arxiv.org/abs/2603.05460v1" target="_blank" rel="noopener">The Inverse Micromechanics Problem given Dielectric Constants for Isotropic Composites with Spherical Inclusions</a>
+      </div>
+      <div class="paper-meta">
+        Athindra Pavan, Swaroop Darbha, Bjorn Birgisson
+        &middot; arxiv
+        
+        &middot; 2026-03-05
+        
+      </div>
+      
+      <div class="paper-abstract">In this article, convex optimization is introduced as a promising tool to study Eshelby based inverse micromechanics problems. The focus is on inverse micromechanics using the Eshelby-Mori-Tanaka model given the dielectric constants of the composite material and of all of its components. The model is exactly the same for the conductivity properties as well. This choice of model is made since the model is fairly simple and has a closed form analytical solution for the case of spheroidal inclusions as well. The forward or direct micromechanics problem deals with the determination of effective properties of a composite material given the properties of its components and microstructural information. The focus is on isotropic composites and the distribution of inclusions is assumed to be such that this holds. The inverse micromechanics problem considered in this paper deals with the determination of microstructural information given the properties of the composite material and all of its co</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-low">1</span>
+        
+        <a href="http://arxiv.org/abs/2603.07692v1" target="_blank" rel="noopener">Understanding the Long-Only Minimum Variance Portfolio</a>
+      </div>
+      <div class="paper-meta">
+        Nick L. Gunther, Alec N. Kercheval, Ololade Sowunmi
+        &middot; arxiv
+        
+        &middot; 2026-03-08
+        
+      </div>
+      
+      <div class="paper-abstract">For a covariance matrix coming from a factor model of returns, we investigate the relationship between the long-only global minimum variance portfolio and the asset exposures to the factors. In the case of a 1-factor model, we provide a rigorous and explicit description of the long-only solution in terms of the parameters of the covariance matrix. For $q&gt;1$ factors, we provide a description of the long-only portfolio in geometric terms. The results are illustrated with empirical daily returns of US stocks.</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-low">1</span>
+        
+        <a href="http://arxiv.org/abs/2603.07752v1" target="_blank" rel="noopener">Dynamic slippage control and rejection feedback in spot FX market making</a>
+      </div>
+      <div class="paper-meta">
+        Alexander Barzykin
+        &middot; arxiv
+        
+        &middot; 2026-03-08
+        
+      </div>
+      
+      <div class="paper-abstract">We study an OTC FX market-making problem, built on the Avellaneda-Stoikov tradition, in which a dealer streams size-dependent quotes on a discrete ladder and manages inventory risk over a finite horizon under Poisson arrivals of trade requests. Adverse selection is modelled through latency-driven price moves over a delay window, represented by Gaussian marks whose conditional means can depend on the quoted spread, capturing selective client reaction to stale quotes. The dealer can address latency risk through trade rejection when slippage breaches a tolerance threshold. We treat slippage tolerance as an explicit control jointly optimized with quotes: upon receiving a trade request, the dealer chooses an acceptance/rejection rule, which makes the trade economically akin to an embedded option written on the latency price move. We further introduce rejection feedback through an EMA-based rejection score used as a reputation proxy, so that client intensity is endogenously modulated by past</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-low">1</span>
+        
+        <a href="http://arxiv.org/abs/2603.07863v1" target="_blank" rel="noopener">Choice of Collateral Currency in Differential Swaps</a>
+      </div>
+      <div class="paper-meta">
+        Yining Ding, Ruyi Liu, Marek Rutkowski
+        &middot; arxiv
+        
+        &middot; 2026-03-09
+        
+      </div>
+      
+      <div class="paper-abstract">The role of collateral in derivative pricing has evolved beyond credit risk mitigation, particularly following the global financial crisis, when funding costs and basis spreads became central to valuation practices. This development coincided with the transition from the London Interbank Offered Rate (LIBOR) to risk-free rates (RFRs) and the increasing standardization of collateralised trading. We study the valuation and hedging of a class of differential swaps referencing backward-looking averages of overnight rates, with SOFR swaps appearing as a particular instance. The focus is on the impact of the collateral currency. Extending earlier results Ding et al. [Math. Finance 36 (2026), pp.~180--202], we allow the collateral account to be denominated in a currency different from that of the contractual cash flows and derive explicit pricing and hedging strategies using a futures-based replication approach.   We show that the choice of collateral currency can have a non-trivial effect on</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-low">1</span>
+        
+        <a href="http://arxiv.org/abs/2603.03035v1" target="_blank" rel="noopener">Generalized Bayes for Causal Inference</a>
+      </div>
+      <div class="paper-meta">
+        Emil Javurek, Dennis Frauen, Yuxin Wang, Stefan Feuerriegel
+        &middot; arxiv
+        
+        &middot; 2026-03-03
+        
+      </div>
+      
+      <div class="paper-abstract">Uncertainty quantification is central to many applications of causal machine learning, yet principled Bayesian inference for causal effects remains challenging. Standard Bayesian approaches typically require specifying a probabilistic model for the data-generating process, including high-dimensional nuisance components such as propensity scores and outcome regressions. Standard posteriors are thus vulnerable to strong modeling choices, including complex prior elicitation. In this paper, we propose a generalized Bayesian framework for causal inference. Our framework avoids explicit likelihood modeling; instead, we place priors directly on the causal estimands and update these using an identification-driven loss function, which yields generalized posteriors for causal effects. As a result, our framework turns existing loss-based causal estimators into estimators with full uncertainty quantification. Our framework is flexible and applicable to a broad range of causal estimands (e.g., ATE,</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-low">1</span>
+        
+        <a href="http://arxiv.org/abs/2603.03071v1" target="_blank" rel="noopener">From Reachability to Learnability: Geometric Design Principles for Quantum Neural Networks</a>
+      </div>
+      <div class="paper-meta">
+        Vishal S. Ngairangbam, Michael Spannowsky
+        &middot; arxiv
+        
+        &middot; 2026-03-03
+        
+      </div>
+      
+      <div class="paper-abstract">Classical deep networks are effective because depth enables adaptive geometric deformation of data representations. In quantum neural networks (QNNs), however, depth or state reachability alone does not guarantee this feature-learning capability. We study this question in the pure-state setting by viewing encoded data as an embedded manifold in $\mathbb{C}P^{2^n-1}$ and analysing infinitesimal unitary actions through Lie-algebra directions. We introduce Classical-to-Lie-algebra (CLA) maps and the criterion of almost Complete Local Selectivity (aCLS), which combines directional completeness with data-dependent local selectivity. Within this framework, we show that data-independent trainable unitaries are complete but non-selective, i.e. learnable rigid reorientations, whereas pure data encodings are selective but non-tunable, i.e. fixed deformations. Hence, geometric flexibility requires a non-trivial joint dependence on data and trainable weights. We further show that accessing high-di</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-low">1</span>
+        
+        <a href="http://arxiv.org/abs/2603.03188v1" target="_blank" rel="noopener">Scalable Uncertainty Quantification for Black-Box Density-Based Clustering</a>
+      </div>
+      <div class="paper-meta">
+        Nicola Bariletto, Stephen G. Walker
+        &middot; arxiv
+        
+        &middot; 2026-03-03
+        
+      </div>
+      
+      <div class="paper-abstract">We introduce a novel framework for uncertainty quantification in clustering. By combining the martingale posterior paradigm with density-based clustering, uncertainty in the estimated density is naturally propagated to the clustering structure. The approach scales effectively to high-dimensional and irregularly shaped data by leveraging modern neural density estimators and GPU-friendly parallel computation. We establish frequentist consistency guarantees and validate the methodology on synthetic and real data.</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-low">1</span>
+        
+        <a href="http://arxiv.org/abs/2603.03235v1" target="_blank" rel="noopener">The elbow statistic: Multiscale clustering statistical significance</a>
+      </div>
+      <div class="paper-meta">
+        Francisco J. Perez-Reche
+        &middot; arxiv
+        
+        &middot; 2026-03-03
+        
+      </div>
+      
+      <div class="paper-abstract">Selecting the number of clusters remains a fundamental challenge in unsupervised learning. Existing criteria typically target a single ``optimal&#39;&#39; partition, often overlooking statistically meaningful structure present at multiple resolutions. We introduce ElbowSig, a framework that formalizes the heuristic ``elbow&#39;&#39; method as a rigorous inferential problem. Our approach centers on a normalized discrete curvature statistic derived from the cluster heterogeneity sequence, which is evaluated against a null distribution of unstructured data. We derive the asymptotic properties of this null statistic in both large-sample and high-dimensional regimes, characterizing its baseline behavior and stochastic variability. As an algorithm-agnostic procedure, ElbowSig requires only the heterogeneity sequence and is compatible with a wide range of clustering methods, including hard, fuzzy, and model-based clustering. Extensive experiments on synthetic and empirical datasets demonstrate that the metho</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-low">1</span>
+        
+        <a href="http://arxiv.org/abs/2603.04109v1" target="_blank" rel="noopener">Testing Full Mediation of Treatment Effects and the Identifiability of Causal Mechanisms</a>
+      </div>
+      <div class="paper-meta">
+        Martin Huber, Kevin Kloiber, Lukáš Lafférs
+        &middot; arxiv
+        
+        &middot; 2026-03-04
+        
+      </div>
+      
+      <div class="paper-abstract">In causal analysis, understanding the causal mechanisms through which an intervention or treatment affects an outcome is often of central interest. We propose a test to evaluate (i) whether the causal effect of a treatment that is randomly assigned conditional on covariates is fully mediated by, or operates exclusively through, observed intermediate outcomes (referred to as mediators or surrogate outcomes), and (ii) whether the various causal mechanisms operating through different mediators are identifiable conditional on covariates. We demonstrate that if both full mediation and identification of causal mechanisms hold, then the conditionally random treatment is conditionally independent of the outcome given the mediators and covariates. Furthermore, we extend our framework to settings with non-randomly assigned treatments. We show that, in this case, full mediation remains testable, while identification of causal mechanisms is no longer guaranteed. We propose a double machine learnin</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-low">1</span>
+        
+        <a href="http://arxiv.org/abs/2603.04546v1" target="_blank" rel="noopener">Oracle-efficient Hybrid Learning with Constrained Adversaries</a>
+      </div>
+      <div class="paper-meta">
+        Princewill Okoroafor, Robert Kleinberg, Michael P. Kim
+        &middot; arxiv
+        
+        &middot; 2026-03-04
+        
+      </div>
+      
+      <div class="paper-abstract">The Hybrid Online Learning Problem, where features are drawn i.i.d. from an unknown distribution but labels are generated adversarially, is a well-motivated setting positioned between statistical and fully-adversarial online learning. Prior work has presented a dichotomy: algorithms that are statistically-optimal, but computationally intractable (Wu et al., 2023), and algorithms that are computationally-efficient (given an ERM oracle), but statistically-suboptimal (Wu et al., 2024).   This paper takes a significant step towards achieving statistical optimality and computational efficiency simultaneously in the Hybrid Learning setting. To do so, we consider a structured setting, where the Adversary is constrained to pick labels from an expressive, but fixed, class of functions $R$. Our main result is a new learning algorithm, which runs efficiently given an ERM oracle and obtains regret scaling with the Rademacher complexity of a class derived from the Learner&#39;s hypothesis class $H$ and</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-low">1</span>
+        
+        <a href="http://arxiv.org/abs/2603.04635v1" target="_blank" rel="noopener">Optimal Prediction-Augmented Algorithms for Testing Independence of Distributions</a>
+      </div>
+      <div class="paper-meta">
+        Maryam Aliakbarpour, Alireza Azizi, Ria Stevens
+        &middot; arxiv
+        
+        &middot; 2026-03-04
+        
+      </div>
+      
+      <div class="paper-abstract">Independence testing is a fundamental problem in statistical inference: given samples from a joint distribution $p$ over multiple random variables, the goal is to determine whether $p$ is a product distribution or is $ε$-far from all product distributions in total variation distance. In the non-parametric finite-sample regime, this task is notoriously expensive, as the minimax sample complexity scales polynomially with the support size. In this work, we move beyond these worst-case limitations by leveraging the framework of \textit{augmented distribution testing}. We design independence testers that incorporate auxiliary, but potentially untrustworthy, predictive information. Our framework ensures that the tester remains robust, maintaining worst-case validity regardless of the prediction&#39;s quality, while significantly improving sample efficiency when the prediction is accurate. Our main contributions include: (i) a bivariate independence tester for discrete distributions that adaptive</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-low">1</span>
+        
+        <a href="http://arxiv.org/abs/2603.04807v1" target="_blank" rel="noopener">The Inductive Bias of Convolutional Neural Networks: Locality and Weight Sharing Reshape Implicit Regularization</a>
+      </div>
+      <div class="paper-meta">
+        Tongtong Liang, Esha Singh, Rahul Parhi, Alexander Cloninger, Yu-Xiang Wang
+        &middot; arxiv
+        
+        &middot; 2026-03-05
+        
+      </div>
+      
+      <div class="paper-abstract">We study how architectural inductive bias reshapes the implicit regularization induced by the edge-of-stability phenomenon in gradient descent. Prior work has established that for fully connected networks, the strength of this regularization is governed solely by the global input geometry; consequently, it is insufficient to prevent overfitting on difficult distributions such as the high-dimensional sphere. In this paper, we show that locality and weight sharing fundamentally change this picture. Specifically, we prove that provided the receptive field size $m$ remains small relative to the ambient dimension $d$, these networks generalize on spherical data with a rate of $n^{-\frac{1}{6} +O(m/d)}$, a regime where fully connected networks provably fail. This theoretical result confirms that weight sharing couples the learned filters to the low-dimensional patch manifold, thereby bypassing the high dimensionality of the ambient space. We further corroborate our theory by analyzing the pa</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-low">1</span>
+        
+        <a href="http://arxiv.org/abs/2603.05317v1" target="_blank" rel="noopener">How important are the genes to explain the outcome - the asymmetric Shapley value as an honest importance metric for high-dimensional features</a>
+      </div>
+      <div class="paper-meta">
+        Mark A. van de Wiel, Jeroen Goedhart, Martin Jullum, Kjersti Aas
+        &middot; arxiv
+        
+        &middot; 2026-03-05
+        
+      </div>
+      
+      <div class="paper-abstract">In clinical prediction settings the importance of a high-dimensional feature like genomics is often assessed by evaluating the change in predictive performance when adding it to a set of traditional clinical variables. This approach is questionable, because it does not account for collinearity nor known directionality of dependencies between variables. We suggest to use asymmetric Shapley values as a more suitable alternative to quantify feature importance in the context of a mixed-dimensional prediction model. We focus on a setting that is particularly relevant in clinical prediction: disease state as a mediating variable for genomic effects, with additional confounders for which the direction of effects may be unknown. We derive efficient algorithms to compute local and global asymmetric Shapley values for this setting. The former are shown to be very useful for inference, whereas the latter provide interpretation by decomposing any predictive performance metric into contributions of</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-low">1</span>
+        
+        <a href="http://arxiv.org/abs/2603.05340v1" target="_blank" rel="noopener">On the Statistical Optimality of Optimal Decision Trees</a>
+      </div>
+      <div class="paper-meta">
+        Zineng Xu, Subhroshekhar Ghosh, Yan Shuo Tan
+        &middot; arxiv
+        
+        &middot; 2026-03-05
+        
+      </div>
+      
+      <div class="paper-abstract">While globally optimal empirical risk minimization (ERM) decision trees have become computationally feasible and empirically successful, rigorous theoretical guarantees for their statistical performance remain limited. In this work, we develop a comprehensive statistical theory for ERM trees under random design in both high-dimensional regression and classification. We first establish sharp oracle inequalities that bound the excess risk of the ERM estimator relative to the best possible approximation achievable by any tree with at most $L$ leaves, thereby characterizing the interpretability-accuracy trade-off. We derive these results using a novel uniform concentration framework based on empirically localized Rademacher complexity. Furthermore, we derive minimax optimal rates over a novel function class: the piecewise sparse heterogeneous anisotropic Besov (PSHAB) space. This space explicitly captures three key structural features encountered in practice: sparsity, anisotropic smoothne</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-low">1</span>
+        
+        <a href="http://arxiv.org/abs/2603.06752v1" target="_blank" rel="noopener">Latent Autoencoder Ensemble Kalman Filter for Data assimilation</a>
+      </div>
+      <div class="paper-meta">
+        Xin T. Tong, Yanyan Wang, Liang Yan
+        &middot; arxiv
+        
+        &middot; 2026-03-06
+        
+      </div>
+      
+      <div class="paper-abstract">The ensemble Kalman filter (EnKF) is widely used for data assimilation in high-dimensional systems, but its performance often deteriorates for strongly nonlinear dynamics due to the structural mismatch between the Kalman update and the underlying system behavior. In this work, we propose a latent autoencoder ensemble Kalman filter (LAE-EnKF) that addresses this limitation by reformulating the assimilation problem in a learned latent space with linear and stable dynamics. The proposed method learns a nonlinear encoder--decoder together with a stable linear latent evolution operator and a consistent latent observation mapping, yielding a closed linear state-space model in the latent coordinates. This construction restores compatibility with the Kalman filtering framework and allows both forecast and analysis steps to be carried out entirely in the latent space. Compared with existing autoencoder-based and latent assimilation approaches that rely on unconstrained nonlinear latent dynamics</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-low">1</span>
+        
+        <a href="http://arxiv.org/abs/2603.06251v1" target="_blank" rel="noopener">SPPCSO: Adaptive Penalized Estimation Method for High-Dimensional Correlated Data</a>
+      </div>
+      <div class="paper-meta">
+        Ying Hu, Hu Yang
+        &middot; arxiv
+        
+        &middot; 2026-03-06
+        
+      </div>
+      
+      <div class="paper-abstract">With the rise of high-dimensional correlated data, multicollinearity poses a significant challenge to model stability, often leading to unstable estimation and reduced predictive accuracy. This work proposes the Single-Parametric Principal Component Selection Operator (SPPCSO), an innovative penalized estimation method that integrates single-parametric principal component regression and $L_{1}$ regularization to adaptively adjust the shrinkage factor by incorporating principal component information. This approach achieves a balance between variable selection and coefficient estimation, ensuring model stability and robust estimation even in high-dimensional, high-noise environments. The primary contribution lies in addressing the instability of traditional variable selection methods when applied to high-noise, high-dimensional correlated data. Theoretically, our method exhibits selection consistency and achieves a smaller estimation error bound compared to traditional penalized estimati</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-low">1</span>
+        
+        <a href="http://arxiv.org/abs/2603.06957v1" target="_blank" rel="noopener">Post-Training with Policy Gradients: Optimality and the Base Model Barrier</a>
+      </div>
+      <div class="paper-meta">
+        Alireza Mousavi-Hosseini, Murat A. Erdogdu
+        &middot; arxiv
+        
+        &middot; 2026-03-07
+        
+      </div>
+      
+      <div class="paper-abstract">We study post-training linear autoregressive models with outcome and process rewards. Given a context $\boldsymbol{x}$, the model must predict the response $\boldsymbol{y} \in Y^N$, a sequence of length $N$ that satisfies a $γ$ margin condition, an extension of the standard separability to sequences. We prove that on test samples where the base model achieves a non-trivial likelihood $α$, a variant of policy gradient (PG) can achieve likelihood $1 - \varepsilon$ with an essentially minimax optimal number of reward queries $\tilde{O}((α^{-1} + \varepsilon^{-1})/γ^2)$. However, a barrier arises for going beyond the support of the base model. We prove that the overall expected error after post-training with outcome rewards is governed by a property of the base model called the Likelihood Quantile (LQ), and that variants of PG, while minimax optimal, may require a number of reward queries exponential in $N$ to go beyond this support, regardless of the pre-training algorithm. To overcome th</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-low">1</span>
+        
+        <a href="http://arxiv.org/abs/2603.07864v1" target="_blank" rel="noopener">An Interpretable Generative Framework for Anomaly Detection in High-Dimensional Financial Time Series</a>
+      </div>
+      <div class="paper-meta">
+        Waldyn G Martinez
+        &middot; arxiv
+        
+        &middot; 2026-03-09
+        
+      </div>
+      
+      <div class="paper-abstract">Detecting structural instability and anomalies in high-dimensional financial time series is challenging due to complex temporal dependence and evolving cross-sectional structure. We propose ReGEN-TAD, an interpretable generative framework that integrates modern machine learning with econometric diagnostics for anomaly detection. The model combines joint forecasting and reconstruction within a refined convolutional--transformer architecture and aggregates complementary signals capturing predictive inconsistency, reconstruction degradation, latent distortion, and volatility shifts. Robust calibration yields a unified anomaly score without labeled data. Experiments on synthetic and financial panels demonstrate improved robustness to structured deviations while enabling economically coherent factor-level attribution.</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-low">1</span>
+        
+        <a href="http://arxiv.org/abs/2603.07965v1" target="_blank" rel="noopener">Local Constrained Bayesian Optimization</a>
+      </div>
+      <div class="paper-meta">
+        Jing Jingzhe, Fan Zheyi, Szu Hui Ng, Qingpei Hu
+        &middot; arxiv
+        
+        &middot; 2026-03-09
+        
+      </div>
+      
+      <div class="paper-abstract">Bayesian optimization (BO) for high-dimensional constrained problems remains a significant challenge due to the curse of dimensionality. We propose Local Constrained Bayesian Optimization (LCBO), a novel framework tailored for such settings. Unlike trust-region methods that are prone to premature shrinking when confronting tight or complex constraints, LCBO leverages the differentiable landscape of constraint-penalized surrogates to alternate between rapid local descent and uncertainty-driven exploration. Theoretically, we prove that LCBO achieves a convergence rate for the Karush-Kuhn-Tucker (KKT) residual that depends polynomially on the dimension $d$ for common kernels under mild assumptions, offering a rigorous alternative to global BO where regret bounds typically scale exponentially. Extensive evaluations on high-dimensional benchmarks (up to 100D) demonstrate that LCBO consistently outperforms state-of-the-art baselines.</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-low">1</span>
+        
+        <a href="http://arxiv.org/abs/2603.08682v1" target="_blank" rel="noopener">Structural Causal Bottleneck Models</a>
+      </div>
+      <div class="paper-meta">
+        Simon Bing, Jonas Wahl, Jakob Runge
+        &middot; arxiv
+        
+        &middot; 2026-03-09
+        
+      </div>
+      
+      <div class="paper-abstract">We introduce structural causal bottleneck models (SCBMs), a novel class of structural causal models. At the core of SCBMs lies the assumption that causal effects between high-dimensional variables only depend on low-dimensional summary statistics, or bottlenecks, of the causes. SCBMs provide a flexible framework for task-specific dimension reduction while being estimable via standard, simple learning algorithms in practice. We analyse identifiability in SCBMs, connect them to information bottlenecks in the sense of Tishby &amp; Zaslavsky (2015), and illustrate how to estimate them experimentally. We also demonstrate the benefit of bottlenecks for effect estimation in low-sample transfer learning settings. We argue that SCBMs provide an alternative to existing causal dimension reduction frameworks like causal representation learning or causal abstraction learning.</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-low">1</span>
+        
+        <a href="http://arxiv.org/abs/2603.02639v1" target="_blank" rel="noopener">Convex and Non-convex Federated Learning with Stale Stochastic Gradients: Diminishing Step Size is All You Need</a>
+      </div>
+      <div class="paper-meta">
+        Xinran Zheng, Tara Javidi, Behrouz Touri
+        &middot; arxiv
+        
+        &middot; 2026-03-03
+        
+      </div>
+      
+      <div class="paper-abstract">We propose a general framework for distributed stochastic optimization under delayed gradient models. In this setting, $n$ local agents leverage their own data and computation to assist a central server in minimizing a global objective composed of agents&#39; local cost functions. Each agent is allowed to transmit stochastic-potentially biased and delayed-estimates of its local gradient. While a prior work has advocated delay-adaptive step sizes for stochastic gradient descent (SGD) in the presence of delays, we demonstrate that a pre-chosen diminishing step size is sufficient and matches the performance of the adaptive scheme. Moreover, our analysis establishes that diminishing step sizes recover the optimal SGD rates for nonconvex and strongly convex objectives.</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-low">1</span>
+        
+        <a href="http://arxiv.org/abs/2603.04994v1" target="_blank" rel="noopener">Stochastic Optimal Feedforward-Feedback Control for Partially Observable Sensorimotor Systems</a>
+      </div>
+      <div class="paper-meta">
+        Bastien Berret, Frédéric Jean
+        &middot; arxiv
+        
+        &middot; 2026-03-05
+        
+      </div>
+      
+      <div class="paper-abstract">Robust control of complex engineered and biological systems hinges on the integration of feedforward and feedback mechanisms. This is exemplified in neural motor control, where feedforward muscle co-contraction complements sensory-driven feedback corrections to ensure stable behaviors. However, deriving a general continuous-time framework to determine such optimal control policies for partially observable, stochastic, nonlinear, and high-dimensional systems remains a formidable computational challenge. Here, we introduce a framework that extends neighboring optimal control by enabling the feedforward plan to explicitly account for feedback uncertainties and latencies. Using statistical linearization, we transform the stochastic problem into an approximately equivalent deterministic optimization within a tractable, augmented state space that retains critical nonlinearities, offering both mechanistic interpretability and theoretical guarantees on approximation fidelity. We apply this fra</div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-low">1</span>
+        
+        <a href="http://arxiv.org/abs/2603.06823v1" target="_blank" rel="noopener">Integrated Investment and Operational Planning for Sugarcane-Based Biofuels and Bioelectricity under Market Uncertainty</a>
+      </div>
+      <div class="paper-meta">
+        Carolina Monteiro, Bruno Fanzeres, Rafael Kelman, Raphael Araujo Sampaio, Luana Gaspar, Lucas Bacellar, Joaquim Dias Garcia
+        &middot; arxiv
+        
+        &middot; 2026-03-06
+        
+      </div>
+      
+      <div class="paper-abstract">Sugarcane biomass is a strategic resource for the energy transition, particularly in Brazil, where it underpins electricity and ethanol production. Investment planning is challenged by diverse production pathways, price volatility, and feedstock variability. This work develops a two-stage stochastic optimization model integrating investment and operational decisions for sugarcane facilities. The model aims to support robust planning for diversified biomass plants, aiding the sector&#39;s decarbonization. The first stage defines capacity expansion under economies of scale through a power-law cost function. The second stage defines operational decisions under price and feedstock uncertainty, modeled via scenarios and Conditional Value-at-Risk. \answer{From an investor&#39;s perspective, the objective is to minimize risk-adjusted net costs. In addition to its methodological contributions, this work also provides an open-source implementation of the proposed capacity expansion planning framework, </div>
+      
+    </div>
+    
+    <div class="paper">
+      <div class="paper-title">
+        
+        <span class="score score-low">1</span>
+        
+        <a href="http://arxiv.org/abs/2603.07617v1" target="_blank" rel="noopener">Existence, Sharp Boundary Asymptotics, and Stochastic Optimal Control for Semilinear Elliptic Equations with Gradient-Dependent Terms and Singular Weights</a>
+      </div>
+      <div class="paper-meta">
+        Dragos-Patru Covei
+        &middot; arxiv
+        
+        &middot; 2026-03-08
+        
+      </div>
+      
+      <div class="paper-abstract">We establish existence, uniqueness, and precise boundary asymptotic behavior for large solutions to the semilinear elliptic equation \begin{equation*} -Δu+b(x)h(|\nabla u|)+a(x)u=f(x) \end{equation*}% in a bounded strictly convex domain $Ω\subset \mathbb{R}^{N}$. Here, $h $ is a strictly convex function with power-like growth $h(s)\sim s^{q}$ for $% q \in (1,2]$, and the weights $a(x), b(x)$ exhibit prescribed singular growth near $\partial Ω$. Our main contributions are threefold: (i) we prove existence and uniqueness via Perron&#39;s method and derive sharp liminf and limsup bounds for the blow-up rate $γ=(β-q+2)/(q-1)$, extending recent high-precision analytic techniques; (ii) we establish the strict convexity of solutions through the microscopic convexity principle; (iii) we provide a rigorous verification theorem identifying the solution as the value function of an infinite-horizon stochastic control problem with state constraints, in the spirit of the Lasry--Lions framework. Three di</div>
+      
+    </div>
+    
+
+    
+  </div>
+  
+
+  <footer>
+    Generated by arxiv-feed &middot; Powered by arxiv API &amp; RSS
+  </footer>
+</body>
+</html>

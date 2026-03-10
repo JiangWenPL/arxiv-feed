@@ -1,0 +1,112 @@
+# Curated list of credible researchers and authors
+# credibility_tier: 1=top (always include), 2=solid (include with keyword match), 3=emerging (keyword + score threshold)
+
+researchers:
+  # 3D Gaussian Splatting / Neural Rendering
+  - name: "Bernhard Kerbl"
+    affiliation: "TU Wien"
+    topics: ["3DGS", "neural rendering"]
+    credibility_tier: 1
+
+  - name: "Georgios Kopanas"
+    affiliation: "Inria"
+    topics: ["3DGS", "point-based rendering"]
+    credibility_tier: 1
+
+  - name: "George Drettakis"
+    affiliation: "Inria"
+    topics: ["neural rendering", "3DGS"]
+    credibility_tier: 1
+
+  - name: "Ben Mildenhall"
+    affiliation: "Google"
+    topics: ["NeRF", "neural rendering"]
+    credibility_tier: 1
+
+  - name: "Jon Barron"
+    affiliation: "Google"
+    topics: ["NeRF", "3D vision"]
+    credibility_tier: 1
+
+  - name: "Angjoo Kanazawa"
+    affiliation: "UC Berkeley"
+    topics: ["3D reconstruction", "human body"]
+    credibility_tier: 1
+
+  # ML Infra / Systems
+  - name: "Tri Dao"
+    affiliation: "Princeton / Together AI"
+    topics: ["flash attention", "efficient transformers"]
+    credibility_tier: 1
+
+  - name: "Song Han"
+    affiliation: "MIT"
+    topics: ["model compression", "efficient inference", "quantization"]
+    credibility_tier: 1
+
+  - name: "Trevor Gale"
+    affiliation: "Google"
+    topics: ["sparse computation", "ML systems"]
+    credibility_tier: 2
+
+  - name: "Tianqi Chen"
+    affiliation: "CMU"
+    topics: ["ML compilers", "TVM", "systems"]
+    credibility_tier: 1
+
+  # Learning Methods / Foundation Models
+  - name: "Ilya Sutskever"
+    affiliation: "SSI"
+    topics: ["scaling", "pretraining", "alignment"]
+    credibility_tier: 1
+
+  - name: "Andrej Karpathy"
+    affiliation: "Independent"
+    topics: ["deep learning", "LLMs", "education"]
+    credibility_tier: 1
+
+  - name: "Yann LeCun"
+    affiliation: "Meta / NYU"
+    topics: ["self-supervised learning", "world models"]
+    credibility_tier: 1
+
+  - name: "John Schulman"
+    affiliation: "Anthropic"
+    topics: ["RLHF", "alignment", "PPO"]
+    credibility_tier: 1
+
+  - name: "Jason Wei"
+    affiliation: "OpenAI"
+    topics: ["chain of thought", "emergent abilities", "scaling"]
+    credibility_tier: 1
+
+  - name: "Lilian Weng"
+    affiliation: "OpenAI"
+    topics: ["deep learning survey", "agents"]
+    credibility_tier: 1
+
+  - name: "Sebastian Raschka"
+    affiliation: "Lightning AI"
+    topics: ["LLMs", "deep learning education"]
+    credibility_tier: 1
+
+  - name: "Chip Huyen"
+    affiliation: "Independent"
+    topics: ["MLOps", "ML systems", "serving"]
+    credibility_tier: 1
+
+  - name: "Sasha Rush"
+    affiliation: "Cornell"
+    topics: ["transformers", "structured generation"]
+    credibility_tier: 1
+
+  # Math / Quant
+  - name: "Tai-Danae Bradley"
+    affiliation: "SandboxAQ"
+    topics: ["category theory", "applied math"]
+    credibility_tier: 2
+
+  - name: "Terence Tao"
+    affiliation: "UCLA"
+    topics: ["mathematics"]
+    credibility_tier: 1

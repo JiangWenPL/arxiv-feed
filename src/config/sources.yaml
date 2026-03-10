@@ -1,0 +1,122 @@
+# arxiv-feed source configuration
+
+arxiv:
+  queries:
+    latest_research:
+      # 3D Gaussian Splatting and neural rendering
+      - category: "cs.CV"
+        keywords: ["gaussian splatting", "3DGS", "neural rendering", "radiance field", "NeRF", "point-based rendering", "3D reconstruction"]
+        subcategory: "3dgs"
+      - category: "cs.GR"
+        keywords: ["gaussian splatting", "neural rendering", "differentiable rendering"]
+        subcategory: "3dgs"
+
+    ml_infra:
+      - category: "cs.AR"
+        keywords: ["flash attention", "KV cache", "quantization", "model serving", "inference optimization", "CUDA kernel", "GPU optimization", "tensor parallel", "model parallel", "mixed precision"]
+        subcategory: "ml_infra"
+      - category: "cs.DC"
+        keywords: ["distributed training", "pipeline parallel", "data parallel", "gradient compression"]
+        subcategory: "ml_infra"
+      - category: "cs.LG"
+        keywords: ["efficient transformer", "attention mechanism", "model compression", "pruning", "distillation", "sparse attention"]
+        subcategory: "ml_infra"
+
+    learning_methods:
+      - category: "cs.LG"
+        keywords: ["RLHF", "DPO", "alignment", "reward model", "pretraining", "scaling law", "in-context learning", "chain of thought", "fine-tuning", "self-supervised"]
+        subcategory: "learning_methods"
+      - category: "cs.CL"
+        keywords: ["language model", "instruction tuning", "constitutional AI", "RLHF"]
+        subcategory: "learning_methods"
+
+    general_reading:
+      - category: "math.OC"
+        keywords: ["convex optimization", "stochastic optimization", "online learning"]
+        subcategory: "math"
+      - category: "stat.ML"
+        keywords: ["statistical learning", "high-dimensional", "concentration inequality"]
+        subcategory: "math"
+      - category: "q-fin.MF"
+        keywords: ["stochastic calculus", "option pricing", "portfolio optimization", "risk"]
+        subcategory: "quant"
+
+  max_results_per_query: 20
+  days_lookback: 7
+
+blogs:
+  feeds:
+    - name: "Lilian Weng"
+      url: "https://lilianweng.github.io/index.xml"
+      category: "learning_methods"
+      credibility: 1
+
+    - name: "Andrej Karpathy"
+      url: "https://karpathy.github.io/feed.xml"
+      category: "learning_methods"
+      credibility: 1
+
+    - name: "The Gradient"
+      url: "https://thegradient.pub/rss/"
+      category: "learning_methods"
+      credibility: 2
+
+    - name: "Distill.pub"
+      url: "https://distill.pub/rss.xml"
+      category: "learning_methods"
+      credibility: 1
+
+    - name: "Jay Alammar"
+      url: "https://jalammar.github.io/feed.xml"
+      category: "ml_infra"
+      credibility: 2
+
+    - name: "Sebastian Raschka"
+      url: "https://sebastianraschka.com/blog/feed.xml"
+      category: "learning_methods"
+      credibility: 1
+
+    - name: "Chip Huyen"
+      url: "https://huyenchip.com/feed.xml"
+      category: "ml_infra"
+      credibility: 1
+
+    - name: "colah's blog"
+      url: "https://colah.github.io/rss.xml"
+      category: "learning_methods"
+      credibility: 1
+
+twitter:
+  # Curated researcher accounts (for future scraping)
+  accounts:
+    latest_research:
+      - handle: "BinaGS3D"
+        name: "3D Gaussian Splatting Community"
+      - handle: "Jon_Barron"
+        name: "Jon Barron"
+      - handle: "yaborodin"
+        name: "Bernhard Kerbl"
+
+    ml_infra:
+      - handle: "tri_dao"
+        name: "Tri Dao"
+      - handle: "_jasonwei"
+        name: "Jason Wei"
+      - handle: "kaboroevich"
+        name: "George Hotz"
+
+    learning_methods:
+      - handle: "ylaborin"
+        name: "Yann LeCun"
+      - handle: "iaborstein"
+        name: "Ilya Sutskever"
+      - handle: "kaborpathy"
+        name: "Andrej Karpathy"
+      - handle: "jaborhn_schulman"
+        name: "John Schulman"
+
+    general_reading:
+      - handle: "math3ma"
+        name: "Tai-Danae Bradley"
+      - handle: "quantian1"
+        name: "QuantArb"

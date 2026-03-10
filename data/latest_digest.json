@@ -1,0 +1,56 @@
+{
+  "text": "**Research Digest**\n\n**Latest Research (3DGS)**\n  [36] 3DGS-HPC: Distractor-free 3D Gaussian Splatting with Hybrid Patch-wise Classification\n    Jiahao Chen et al. | <http://arxiv.org/abs/2603.07587v1>\n  [32] ImprovedGS+: A High-Performance C++/CUDA Re-Implementation Strategy for 3D Gaussian Splatting\n    Jordi Mu\u00f1oz Vicente | <http://arxiv.org/abs/2603.08661v1>\n  [26] Holi-Spatial: Evolving Video Streams into Holistic 3D Spatial Intelligence\n    Yuanyuan Gao et al. | <http://arxiv.org/abs/2603.07660v1>\n  [21] Generalized non-exponential Gaussian splatting\n    S\u00e9bastien Speierer et al. | <http://arxiv.org/abs/2603.02887v2>\n  [21] VIRGi: View-dependent Instant Recoloring of 3D Gaussians Splats\n    Alessio Mazzucchelli et al. | <http://arxiv.org/abs/2603.02986v1>\n  [21] SSR-GS: Separating Specular Reflection in Gaussian Splatting for Glossy Surface Reconstruction\n    Ningjing Fan et al. | <http://arxiv.org/abs/2603.05152v1>\n  [21] MipSLAM: Alias-Free Gaussian Splatting SLAM\n    Yingzhao Li et al. | <http://arxiv.org/abs/2603.06989v1>\n  [21] ReconDrive: Fast Feed-Forward 4D Gaussian Splatting for Autonomous Driving Scene Reconstruction\n    Haibao Yu et al. | <http://arxiv.org/abs/2603.07552v1>\n\n_10 papers total \u2014 read more on the site_",
+  "count": 10,
+  "papers": [
+    {
+      "title": "3DGS-HPC: Distractor-free 3D Gaussian Splatting with Hybrid Patch-wise Classification",
+      "url": "http://arxiv.org/abs/2603.07587v1",
+      "score": 36.0
+    },
+    {
+      "title": "ImprovedGS+: A High-Performance C++/CUDA Re-Implementation Strategy for 3D Gaussian Splatting",
+      "url": "http://arxiv.org/abs/2603.08661v1",
+      "score": 32.0
+    },
+    {
+      "title": "Holi-Spatial: Evolving Video Streams into Holistic 3D Spatial Intelligence",
+      "url": "http://arxiv.org/abs/2603.07660v1",
+      "score": 26.0
+    },
+    {
+      "title": "Generalized non-exponential Gaussian splatting",
+      "url": "http://arxiv.org/abs/2603.02887v2",
+      "score": 21.0
+    },
+    {
+      "title": "VIRGi: View-dependent Instant Recoloring of 3D Gaussians Splats",
+      "url": "http://arxiv.org/abs/2603.02986v1",
+      "score": 21.0
+    },
+    {
+      "title": "SSR-GS: Separating Specular Reflection in Gaussian Splatting for Glossy Surface Reconstruction",
+      "url": "http://arxiv.org/abs/2603.05152v1",
+      "score": 21.0
+    },
+    {
+      "title": "MipSLAM: Alias-Free Gaussian Splatting SLAM",
+      "url": "http://arxiv.org/abs/2603.06989v1",
+      "score": 21.0
+    },
+    {
+      "title": "ReconDrive: Fast Feed-Forward 4D Gaussian Splatting for Autonomous Driving Scene Reconstruction",
+      "url": "http://arxiv.org/abs/2603.07552v1",
+      "score": 21.0
+    },
+    {
+      "title": "EmbedTalk: Triplane-Free Talking Head Synthesis using Embedding-Driven Gaussian Deformation",
+      "url": "http://arxiv.org/abs/2603.07604v1",
+      "score": 21.0
+    },
+    {
+      "title": "DynamicVGGT: Learning Dynamic Point Maps for 4D Scene Reconstruction in Autonomous Driving",
+      "url": "http://arxiv.org/abs/2603.08254v1",
+      "score": 21.0
+    }
+  ]
+}

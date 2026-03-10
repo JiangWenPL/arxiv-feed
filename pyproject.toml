@@ -1,0 +1,24 @@
+[project]
+name = "arxiv-feed"
+version = "0.1.0"
+description = "Personalized research paper and blog indexing tool"
+requires-python = ">=3.10"
+dependencies = [
+    "arxiv>=2.1",
+    "feedparser>=6.0",
+    "requests>=2.31",
+    "jinja2>=3.1",
+    "pyyaml>=6.0",
+    "beautifulsoup4>=4.12",
+    "lxml>=5.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.4",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

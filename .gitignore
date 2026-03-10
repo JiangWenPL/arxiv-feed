@@ -1,0 +1,9 @@
+data/feed.db
+data/*.db-journal
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+dist/
+.env
+.secrets/
